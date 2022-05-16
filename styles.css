@@ -6,22 +6,7 @@
 
 html {
     font-size: 16px;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    /* font-family: arial; */
-    /* font-family: monospace; */
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    /* background: repeating-linear-gradient(#74abdd, #74abdd 49.9%, #498dcb 50.1%, #498dcb 100%); */
-    /* height: 100px; */
-    /* height: 100vw;
-    overflow:scroll; */
-}
-
-body {
-    height: 100%;
-    /* background-color: tan; */
-    /* background:black; */
-
-    /* background: linear-gradient(90deg, pink 50%, cyan 50%); */
 }
 
 th {
@@ -31,117 +16,49 @@ th {
 td,
 th,
 tr {
-    /* border: 1px solid gray; */
-    padding: 8px;
-}
-
-table {
-    /* position: fixed; */
-    /* right: 0; */
-    /* background: white; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* width: 100%; */
-    /* border-collapse: collapse; */
-    /* margin: 0 auto; */
-    /* align-items: center; */
-    /* text-align: center; */
-    /* vertical-align: middle; */
-    /* width: 100%; */
-    /* word-wrap: break-word; */
+    padding: 5px 10px;
 }
 
 .colorName,
 .RGB-code,
 .HEX-code {
-    /* text-align: right; */
-    padding: 0 10px;
     cursor: pointer;
 }
 
 #snackbar {
     visibility: hidden;
-    min-width: 250px;
+    min-width: 100px;
     margin-left: -125px;
     text-align: center;
-    border-radius: 2px;
-    padding: 16px;
+    border-radius: 10px;
+    padding: 0.5rem;
     position: fixed;
     z-index: 1;
     left: 50%;
-    bottom: 30px;
-    font-size: 16px;
-    color: black;
+    bottom: 70px;
+    font-size: 1rem;
+    color: white;
+    background-color: #333;
 }
 
-/* #snackbar {
-    background: #555;
-    COLOR: WHITE;
-    padding: 10px;
-    display: inline-block;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-
-    transition: all 300ms;
-
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
 
 #snackbar.show {
-    transform:translateY(0);
-} */
-
-/* #snackbarr {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: -125px;
-    text-align: center;
-    border-radius: 2px;
-    padding: 16px;
-    position: fixed;
-    z-index: 3;
-    left: 50%;
-    bottom: 30px;
-    font-size: 16px;
-    color: black;
-} */
-
-/* .toast-container {
-    position: fixed;
-    top: 1rem;
-    right: 1.5rem;
-    display: grid;
-    justify-items: end;
-    gap: 1.5rem;
+    visibility: visible;
 }
 
-.toast {
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1;
-    padding: 0.5em 1em;
-    background-color: lightblue;
-    animation: toastIt 3000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
-}
-
-@keyframes toastIt {
-    0%,
-    100% {
-        transform: translateY(-150%);
-        opacity: 0;
-    }
-    10%,
-    90% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-} */
-
-/* COLOR LABELS */
+/* LABELS */
 
 .vertical {
-    /* background-color: gray; */
-    /* transform: rotate(-90deg); */
     writing-mode: vertical-lr;
     text-orientation: upright;
 }
@@ -195,7 +112,7 @@ table {
 
 .blue-label {
     background-color: gray;
-    color: deepskyblue;
+    color: blue;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
@@ -203,7 +120,7 @@ table {
 
 .brown-label {
     background-color: gray;
-    color: tan;
+    color: saddlebrown;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
@@ -217,12 +134,12 @@ table {
     font-size: 1.5rem;
 }
 
-#snackbar.show {
-    visibility: visible; /* Show the snackbar */
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-  However, delay the fade out process for 2.5 seconds */
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+.gray-label {
+    background-color: gray;
+    color: darkslategray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 /* REDS */
@@ -292,7 +209,7 @@ table {
     background-color: PaleVioletRed;
 }
 
-/* ORANGE */
+/* ORANGES */
 
 .lightSalmon {
     background-color: lightsalmon;
@@ -313,7 +230,7 @@ table {
     background-color: orange;
 }
 
-/* YELLOW */
+/* YELLOWS */
 
 .gold {
     background-color: gold;
@@ -358,7 +275,7 @@ table {
     background-color: darkkhaki;
 }
 
-/* PURPLE */
+/* PURPLES */
 
 .lavender {
     background-color: lavender;
@@ -398,6 +315,7 @@ table {
 
 .rebeccaPurple {
     background-color: rebeccapurple;
+    color: #c2c2c2;
 }
 
 .blueViolet {
@@ -425,6 +343,7 @@ table {
 }
 .indigo {
     background-color: indigo;
+    color: #c2c2c2;
 }
 
 .slateBlue {
@@ -433,13 +352,14 @@ table {
 
 .darkSlateBlue {
     background-color: darkslateblue;
+    color: #c2c2c2;
 }
 
 .mediumSlateBlue {
     background-color: mediumslateblue;
 }
 
-/* GREEN */
+/* GREENS */
 
 .greenYellow {
     background-color: greenyellow;
@@ -540,7 +460,7 @@ table {
     background-color: teal;
 }
 
-/* BLUE */
+/* BLUES */
 
 .aqua {
     background-color: aqua;
@@ -622,21 +542,204 @@ table {
 
 .blue {
     background-color: blue;
+    color: #c2c2c2;
 }
 
 .mediumBlue {
     background-color: mediumblue;
+    color: #c2c2c2;
 }
 
 .darkBlue {
     background-color: darkblue;
+    color: #c2c2c2;
 }
 
 .navy {
     background-color: navy;
+    color: #c2c2c2;
 }
 
 .midnightBlue {
     background-color: midnightblue;
+    color: #c2c2c2;
 }
 
+/* BROWNS */
+
+.cornsilk {
+    background-color: cornsilk;
+}
+.blanchedAlmond {
+    background-color: blanchedalmond;
+}
+
+.bisque {
+    background-color: bisque;
+}
+
+.navajoWhite {
+    background-color: navajowhite;
+}
+
+.wheat {
+    background-color: wheat;
+}
+
+.burlyWood {
+    background-color: burlywood;
+}
+
+.tan {
+    background-color: tan;
+}
+
+.rosyBrown {
+    background-color: rosybrown;
+}
+
+.sandyBrown {
+    background-color: sandybrown;
+}
+
+.goldenrod {
+    background-color: goldenrod;
+}
+
+.darkGoldenrod {
+    background-color: darkgoldenrod;
+}
+
+.peru {
+    background-color: peru;
+}
+
+.chocolate {
+    background-color: chocolate;
+}
+
+.saddleBrown {
+    background-color: saddlebrown;
+}
+
+.sienna {
+    background-color: sienna;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.maroon {
+    background-color: maroon;
+}
+
+/* WHITES */
+
+.white {
+    background-color: white;
+}
+
+.snow {
+    background-color: snow;
+}
+
+.honeyDew {
+    background-color: honeydew;
+}
+
+.mintCream {
+    background-color: mintcream;
+}
+
+.azure {
+    background-color: azure;
+}
+
+.aliceBlue {
+    background-color: aliceblue;
+}
+
+.ghostWhite {
+    background-color: ghostwhite;
+}
+
+.whiteSmoke {
+    background-color: whitesmoke;
+}
+
+.seaShell {
+    background-color: seashell;
+}
+
+.beige {
+    background-color: beige;
+}
+
+.oldLace {
+    background-color: oldlace;
+}
+
+.floralWhite {
+    background-color: floralwhite;
+}
+
+.ivory {
+    background-color: ivory;
+}
+
+.antiqueWhite {
+    background-color: antiquewhite;
+}
+
+.linen {
+    background-color: linen;
+}
+
+.lavenderBlush {
+    background-color: lavenderblush;
+}
+.mistyRose {
+    background-color: mistyrose;
+}
+
+/* GRAY */
+
+.gainsboro {
+    background-color: gainsboro;
+}
+
+.lightGray {
+    background-color: lightgray;
+}
+
+.silver {
+    background-color: silver;
+}
+.darkGray {
+    background-color: darkgray;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.dimGray {
+    background-color: dimgray;
+}
+
+.lightSlateGray {
+    background-color: lightslategray;
+}
+
+.slateGray {
+    background-color: slategray;
+}
+
+.darkSlateGray {
+    background-color: darkslategray;
+}
+.black {
+    background-color: black;
+    color: #c2c2c2;
+}

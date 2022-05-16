@@ -5,7 +5,8 @@ function copy(that) {
     inp.select();
     document.execCommand("copy", false);
     inp.remove();
-    // alert("copied");
+
+    toast();
 }
 
 function toast() {
@@ -15,40 +16,5 @@ function toast() {
 
     setTimeout(function () {
         x.className = x.className.replace("show", "");
-    }, 1000);
+    },400);
 }
-
-// function rgbToast() {
-//     var x = document.getElementById('snackbarr')
-
-//     x.className = 'show'
-
-//     setTimeout(function () {
-//         x.className = x.className.replace('show', '')
-//     }, 1000)
-// }
-
-// var sb = document.getElementById("snackbar");
-
-// function showMessage(msg) {
-
-//     var sb = document.getElementById('snackbar')
-
-//     sb.innerHTML = msg;
-
-//     sb.classList.add('show');
-
-//     setTimeout(function () { sb.classList.remove('show') }, 3000);
-
-// }
-
-// const hexCopied = document.querySelector('HEX-code');
-// const gbaCopied = document.querySelector('RGB-code');
-
-// let toastContainer;
-
-// function initToast() {
-//     document.body.insertAdjacentHTML('afterbegin',
-//         '<div class="toast-container"></div>');
-// }
-// initToast();
