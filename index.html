@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cheatsheet 101</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <!-- TOAST -->
+        <div>
+            <span id="snackbar">Copied</span>
+        </div>
+        <!-- COLORS TABLE -->
+        <table>
+            <thead>
+                <th colspan="2">Name</th>
+                <th>HEX</th>
+                <th>RGB</th>
+            </thead>
+            <!-- RED -->
+            <tbody>
+                <td rowspan="10" class="red-label"><p class="vertical">Reds</p></td>
+
+                <tr class="indianRed"> 
+                    <td><span class="colorName" onclick="copy(this);toast()">IndianRed</span></td>
+                    <td><span class="HEX-code" onclick="copy(this); toast();">#CD5C5C</span></td>
+                    <td><span class="RGB-code" onclick="copy(this); toast() ">rgb(205, 92, 92)</span></td>
+                </tr>
+                <tr class="lightCoral">
+                    <td class="colorName" onclick="copy(this);toast()">LightCoral</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#F08080</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(240, 128, 128)</td>
+                </tr>
+                <tr class="salmon">
+                    <td class="colorName" onclick="copy(this);toast()">Salmon</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FA8072</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(250, 128, 114)</td>
+                </tr>
+                <tr class="darkSalmon">
+                    <td class="colorName" onclick="copy(this);toast()">DarkSalmon</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#E9967A</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(233, 150, 122)</td>
+                </tr>
+                <tr class="lightSalmon">
+                    <td class="colorName" onclick="copy(this);toast()">LightSalmon</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FFA07A</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 160, 122)</td>
+                </tr>
+                <tr class="crimson">
+                    <td class="colorName" onclick="copy(this);toast()">Crimson</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#DC143C</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(220, 20, 60)</td>
+                </tr>
+                <tr class="red">
+                    <td class="colorName" onclick="copy(this);toast()">Red</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FF0000</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 0, 0)</td>
+                </tr>
+                <tr class="fireBrick">
+                    <td class="colorName" onclick="copy(this);toast()">FireBrick</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#B22222</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(178, 34, 34)</td>
+                </tr>
+                <tr class="darkRed">
+                    <td class="colorName" onclick="copy(this);toast()">DarkRed</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#8B0000</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(139, 0, 0)</td>
+                </tr>
+            </tbody>
+
+            <!-- PINK -->
+
+            <tbody>
+                <td rowspan="7" class="pink-label"><p class="vertical">Pinks</p></td>
+
+                <tr class="pink">
+                    <td class="colorName" onclick="copy(this);toast()">Pink</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FFC0CB</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 192, 203)</td>
+                </tr>
+                <tr class="lightPink">
+                    <td class="colorName" onclick="copy(this);toast()">LightPink</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FFB6C1</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 182, 193)</td>
+                </tr>
+                <tr class="hotPink">
+                    <td class="colorName" onclick="copy(this);toast()">HotPink</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FF69B4</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 105, 180)</td>
+                </tr>
+                <tr class="deepPink">
+                    <td class="colorName" onclick="copy(this);toast()">DeepPink</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FF1493</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 20, 147)</td>
+                </tr>
+                <tr class="mediumVioletRed">
+                    <td class="colorName" onclick="copy(this);toast()">MediumVioletRed</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#C71585</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(199, 21, 133)</td>
+                </tr>
+                <tr class="paleVioletRed">
+                    <td class="colorName" onclick="copy(this);toast()">PaleVioletRed</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#DB7093</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(219, 112, 147)</td>
+                </tr>
+            </tbody>
+
+            <!-- ORANGE -->
+
+            <tbody>
+                <td rowspan="7" class="orange-label"><p class="vertical">Oranges</p></td>
+
+                <tr class="lightSalmon">
+                    <td class="colorName" onclick="copy(this);toast()">LightSalmon</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FFA07A</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 160, 122)</td>
+                </tr>
+                <tr class="coral">
+                    <td class="colorName" onclick="copy(this);toast()">Coral</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FF7F50</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 127, 80)</td>
+                </tr>
+                <tr class="tomato">
+                    <td class="colorName" onclick="copy(this);toast()">Tomato</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FF6347</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 99, 71)</td>
+                </tr>
+                <tr class="orangeRed">
+                    <td class="colorName" onclick="copy(this);toast()">OrangeRed</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FF4500</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 69, 0)</td>
+                </tr>
+                <tr class="darkOrange">
+                    <td class="colorName" onclick="copy(this);toast()">DarkOrange</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FF8C00</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 140, 0)</td>
+                </tr>
+                <tr class="orange">
+                    <td class="colorName" onclick="copy(this);toast()">Orange</td>
+                    <td class="HEX-code" onclick="copy(this); toast()">#FFA500</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 165, 0)</td>
+                </tr>
+            </tbody>
+
+            <!-- YELLOW -->
+
+            <tbody>
+                <td rowspan="12" class="yellow-label"><p class="vertical">Yellows</p></td>
+                <tr class="gold">
+                    <td class="colorName" onclick="copy(this);toast()">Gold</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FFD700</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 215, 0)</td>
+                </tr>
+                <tr class="yellow">
+                    <td class="colorName" onclick="copy(this);toast()">Yellow</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FFFF00</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 255, 0)</td>
+                </tr>
+                <tr class="lightYellow">
+                    <td class="colorName" onclick="copy(this);toast()">LightYellow</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FFFFE0</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 255, 224)</td>
+                </tr>
+                <tr class="lemonChiffon">
+                    <td class="colorName" onclick="copy(this);toast()">LemonChiffon</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FFFACD</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 250, 205)</td>
+                </tr>
+                <tr class="lightGoldenrodYellow">
+                    <td class="colorName" onclick="copy(this);toast()">LightGoldenrodYellow</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FAFAD2</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(250, 250, 210</td>
+                </tr>
+                <tr class="papayaWhip">
+                    <td class="colorName" onclick="copy(this);toast()">PapayaWhip</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FFEFD5</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 239, 213)</td>
+                </tr>
+                <tr class="moccasin">
+                    <td class="colorName" onclick="copy(this);toast()">Moccasin</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FFE4B5</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 228, 181)</td>
+                </tr>
+                <tr class="peachPuff">
+                    <td class="colorName" onclick="copy(this);toast()">PeachPuff</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FFDAB9</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 218, 185)</td>
+                </tr>
+                <tr class="paleGoldenrod">
+                    <td class="colorName" onclick="copy(this);toast()">PaleGoldenRod</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#EEE8AA</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(238, 232, 170)</td>
+                </tr>
+                <tr class="khaki">
+                    <td class="colorName" onclick="copy(this);toast()">Khaki</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#F0E68C</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(240, 230, 140)</td>
+                </tr>
+                <tr class="darkKhaki">
+                    <td class="colorName" onclick="copy(this);toast()">DarkKhaki</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#BDB76B</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(189, 183, 107)</td>
+                </tr>
+            </tbody>
+
+            <!-- PURPLE -->
+
+            <tbody>
+                <td rowspan="20" class="purple-label"><p class="vertical">Purples</p></td>
+
+                <tr class="lavender">
+                    <td class="colorName" onclick="copy(this);toast()">Lavender</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#E6E6FA</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(230, 230, 250)</td>
+                </tr>
+                <tr class="thistle">
+                    <td class="colorName" onclick="copy(this);toast()">Thistle</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#D8BFD8</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(216, 191, 216)</td>
+                </tr>
+                <tr class="plum">
+                    <td class="colorName" onclick="copy(this);toast()">Plum</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#DDA0DD</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(221, 160, 221)</td>
+                </tr>
+                <tr class="violet">
+                    <td class="colorName" onclick="copy(this);toast()">Violet</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#EE82EE</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(238, 130, 238)</td>
+                </tr>
+                <tr class="orchid">
+                    <td class="colorName" onclick="copy(this);toast()">Orchid</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#DA70D6</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(218, 112, 214)</td>
+                </tr>
+                <tr class="fuchsia">
+                    <td class="colorName" onclick="copy(this);toast()">Fuchsia</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FF00FF</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 0, 255)</td>
+                </tr>
+                <tr class="magenta">
+                    <td class="colorName" onclick="copy(this);toast()">Magenta</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#FF00FF</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(255, 0, 255)</td>
+                </tr>
+                <tr class="mediumOrchid">
+                    <td class="colorName" onclick="copy(this);toast()">MediumOrchid</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#BA55D3</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(186, 85, 211)</td>
+                </tr>
+                <tr class="mediumPurple">
+                    <td class="colorName" onclick="copy(this);toast()">MediumPurple</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#9370DB</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(147, 112, 219)</td>
+                </tr>
+                <tr class="rebeccaPurple">
+                    <td class="colorName" onclick="copy(this);toast()">RebeccaPurple</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#663399</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(102, 51, 153)</td>
+                </tr>
+                <tr class="blueViolet">
+                    <td class="colorName" onclick="copy(this);toast()">BlueViolet</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#8A2BE2</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(138, 43, 226)</td>
+                </tr>
+                <tr class="darkViolet">
+                    <td class="colorName" onclick="copy(this);toast()">DarkViolet</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#9400D3</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(148, 0, 211)</td>
+                </tr>
+                <tr class="darkOrchid">
+                    <td class="colorName" onclick="copy(this);toast()">DarkOrchid</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#9932CC</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(153, 50, 204)</td>
+                </tr>
+                <tr class="darkMagenta">
+                    <td class="colorName" onclick="copy(this);toast()">DarkMagenta</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#8B008B</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(139, 0, 139)</td>
+                </tr>
+                <tr class="purple">
+                    <td class="colorName" onclick="copy(this);toast()">Purple</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#800080</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(128, 0, 128)</td>
+                </tr>
+                <tr class="indigo">
+                    <td class="colorName" onclick="copy(this);toast()">Indigo</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#4B0082</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(75, 0, 130)</td>
+                </tr>
+                <tr class="slateBlue">
+                    <td class="colorName" onclick="copy(this);toast()">SlateBlue</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#6A5ACD</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(106, 90, 205)</td>
+                </tr>
+                <tr class="darkSlateBlue">
+                    <td class="colorName" onclick="copy(this);toast()">DarkSlateBlue</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#483D8B</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(72, 61, 139)</td>
+                </tr>
+                <tr class="mediumSlateBlue">
+                    <td class="colorName" onclick="copy(this);toast()">MediumSlateBlue</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#7B68EE</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(123, 104, 238)</td>
+                </tr>
+            </tbody>
+
+            <!-- GREEN -->
+
+            <tbody>
+                <td rowspan="24" class="green-label"><p class="vertical">Greens</p></td>
+
+                <tr class="greenYellow">
+                    <td class="colorName" onclick="copy(this);toast()">GreenYellow</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#ADFF2F</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(173, 255, 47)</td>
+                </tr>
+                <tr class="chartreuse">
+                    <td class="colorName" onclick="copy(this);toast()">Chartreuse</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#7FFF00</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(127, 255, 0)</td>
+                </tr>
+                <tr class="lawnGreen">
+                    <td class="colorName" onclick="copy(this);toast()">LawnGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#7CFC00</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(124, 252, 0)</td>
+                </tr>
+                <tr class="lime">
+                    <td class="colorName" onclick="copy(this);toast()">Lime</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#00FF00</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(0, 255, 0)</td>
+                </tr>
+                <tr class="limeGreen">
+                    <td class="colorName" onclick="copy(this);toast()">LimeGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#32CD32</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(50, 205, 50)</td>
+                </tr>
+                <tr class="paleGreen">
+                    <td class="colorName" onclick="copy(this);toast()">PaleGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#98FB98</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(152, 251, 152)</td>
+                </tr>
+                <tr class="lightGreen">
+                    <td class="colorName" onclick="copy(this);toast()">LightGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#90EE90</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(144, 238, 144)</td>
+                </tr>
+                <tr class="mediumSpringGreen">
+                    <td class="colorName" onclick="copy(this);toast()">MediumSpringGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#00FA9A</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(0, 250, 154)</td>
+                </tr>
+                <tr class="springGreen">
+                    <td class="colorName" onclick="copy(this);toast()">SpringGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#00FF7F</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(0, 255, 127)</td>
+                </tr>
+                <tr class="mediumSeaGreen">
+                    <td class="colorName" onclick="copy(this);toast()">MediumSeaGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#3CB371</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(60, 179, 113)</td>
+                </tr>
+                <tr class="seaGreen">
+                    <td class="colorName" onclick="copy(this);toast()">SeaGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#2E8B57</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(46, 139, 87)</td>
+                </tr>
+                <tr class="forestGreen">
+                    <td class="colorName" onclick="copy(this);toast()">ForestGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#228B22</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(34, 139, 34)</td>
+                </tr>
+                <tr class="green">
+                    <td class="colorName" onclick="copy(this);toast()">Green</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#008000</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(0, 128, 0)</td>
+                </tr>
+                <tr class="darkGreen">
+                    <td class="colorName" onclick="copy(this);toast()">DarkGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#006400</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(0, 100, 0)</td>
+                </tr>
+                <tr class="yellowGreen">
+                    <td class="colorName" onclick="copy(this);toast()">YellowGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#9ACD32</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(154, 205, 50)</td>
+                </tr>
+                <tr class="oliveDrab">
+                    <td class="colorName" onclick="copy(this);toast()">OliveDrab</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#6B8E23</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(107, 142, 35)</td>
+                </tr>
+                <tr class="olive">
+                    <td class="colorName" onclick="copy(this);toast()">Olive</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#808000</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(128, 128, 0)</td>
+                </tr>
+                <tr class="darkOliveGreen">
+                    <td class="colorName" onclick="copy(this);toast()">DarkOliveGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#556B2F</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(85, 107, 47)</td>
+                </tr>
+                <tr class="mediumAquamarine">
+                    <td class="colorName" onclick="copy(this);toast()">MediumAquamarine</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#66CDAA</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(102, 205, 170)</td>
+                </tr>
+                <tr class="darkSeaGreen">
+                    <td class="colorName" onclick="copy(this);toast()">DarkSeaGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#8FBC8B</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(143, 188, 139)</td>
+                </tr>
+                <tr class="lightSeaGreen">
+                    <td class="colorName" onclick="copy(this);toast()">LightSeaGreen</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#20B2AA</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(32, 178, 170)</td>
+                </tr>
+                <tr class="darkCyan">
+                    <td class="colorName" onclick="copy(this);toast()">DarkCyan</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#008B8B</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(0, 139, 139)</td>
+                </tr>
+                <tr class="teal">
+                    <td class="colorName" onclick="copy(this);toast()">Teal</td>
+                    <td class="HEX-code" onclick="copy(this); toast() ">#008080</td>
+                    <td class="RGB-code" onclick="copy(this); toast() ">rgb(0, 128, 128)</td>
+                </tr>
+
+                <!-- BLUE -->
+
+            </tbody>
+        </table>
+    </body>
+</html>

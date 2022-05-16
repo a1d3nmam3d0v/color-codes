@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-family: arial; */
+    /* font-family: monospace; */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    /* background: repeating-linear-gradient(#74abdd, #74abdd 49.9%, #498dcb 50.1%, #498dcb 100%); */
+    /* height: 100px; */
+    /* height: 100vw;
+    overflow:scroll; */
+}
+
+body {
+    height: 100%;
+    /* background-color: tan; */
+    /* background:black; */
+
+    /* background: linear-gradient(90deg, pink 50%, cyan 50%); */
+}
+
+th {
+    background: gray;
+}
+
+td,
+th,
+tr {
+    /* border: 1px solid gray; */
+    padding: 8px;
+}
+
+table {
+    /* position: fixed; */
+    /* right: 0; */
+    /* background: white; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 100%; */
+    /* border-collapse: collapse; */
+    /* margin: 0 auto; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    /* width: 100%; */
+    /* word-wrap: break-word; */
+}
+
+.colorName,
+.RGB-code,
+.HEX-code {
+    /* text-align: right; */
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 16px;
+    color: black;
+}
+
+/* #snackbar {
+    background: #555;
+    COLOR: WHITE;
+    padding: 10px;
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    transition: all 300ms;
+
+}
+
+#snackbar.show {
+    transform:translateY(0);
+} */
+
+/* #snackbarr {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 3;
+    left: 50%;
+    bottom: 30px;
+    font-size: 16px;
+    color: black;
+} */
+
+/* .toast-container {
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    display: grid;
+    justify-items: end;
+    gap: 1.5rem;
+}
+
+.toast {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0.5em 1em;
+    background-color: lightblue;
+    animation: toastIt 3000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+}
+
+@keyframes toastIt {
+    0%,
+    100% {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+    10%,
+    90% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
+
+/* COLOR LABELS */
+
+.vertical {
+    /* background-color: gray; */
+    /* transform: rotate(-90deg); */
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+.red-label {
+    background-color: gray;
+    color: darkred;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.pink-label {
+    background-color: gray;
+    color: hotpink;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.orange-label {
+    background-color: gray;
+    color: tomato;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.yellow-label {
+    background-color: gray;
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.purple-label {
+    background-color: gray;
+    color: purple;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.green-label {
+    background-color: gray;
+    color: lime;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.blue-label {
+    background-color: gray;
+    color: deepskyblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.brown-label {
+    background-color: gray;
+    color: tan;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.white-label {
+    background-color: gray;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* REDS */
+
+.indianRed {
+    background-color: indianred;
+}
+
+.lightCoral {
+    background-color: lightcoral;
+}
+
+.salmon {
+    background-color: salmon;
+}
+
+.darkSalmon {
+    background-color: darksalmon;
+}
+
+.lightSalmon {
+    background-color: lightsalmon;
+}
+
+.crimson {
+    background-color: crimson;
+}
+
+.red {
+    background-color: red;
+}
+
+.fireBrick {
+    background-color: firebrick;
+    /* color: white; */
+}
+
+.darkRed {
+    background-color: darkred;
+    /* color: white; */
+}
+
+/* PINKS */
+
+.pink {
+    background-color: pink;
+}
+
+.lightPink {
+    background-color: lightpink;
+}
+
+.hotPink {
+    background-color: HotPink;
+}
+
+.deepPink {
+    background-color: DeepPink;
+}
+
+.mediumVioletRed {
+    background-color: MediumVioletRed;
+    /* color: white; */
+}
+
+.paleVioletRed {
+    background-color: PaleVioletRed;
+}
+
+/* ORANGE */
+
+.lightSalmon {
+    background-color: lightsalmon;
+}
+.coral {
+    background-color: coral;
+}
+.tomato {
+    background-color: tomato;
+}
+.orangeRed {
+    background-color: orangered;
+}
+.darkOrange {
+    background-color: darkorange;
+}
+.orange {
+    background-color: orange;
+}
+
+/* YELLOW */
+
+.gold {
+    background-color: gold;
+}
+.yellow {
+    background-color: yellow;
+}
+
+.lightYellow {
+    background-color: lightyellow;
+}
+
+.lemonChiffon {
+    background-color: lemonchiffon;
+}
+
+.lightGoldenrodYellow {
+    background-color: lightgoldenrodyellow;
+}
+
+.papayaWhip {
+    background-color: papayawhip;
+}
+
+.moccasin {
+    background-color: moccasin;
+}
+
+.peachPuff {
+    background-color: peachpuff;
+}
+
+.paleGoldenrod {
+    background-color: palegoldenrod;
+}
+
+.khaki {
+    background-color: khaki;
+}
+
+.darkKhaki {
+    background-color: darkkhaki;
+}
+
+/* PURPLE */
+
+.lavender {
+    background-color: lavender;
+}
+
+.thistle {
+    background-color: thistle;
+}
+
+.plum {
+    background-color: plum;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.orchid {
+    background-color: orchid;
+}
+
+.fuchsia {
+    background-color: fuchsia;
+}
+
+.magenta {
+    background-color: magenta;
+}
+
+.mediumOrchid {
+    background-color: mediumorchid;
+}
+
+.mediumPurple {
+    background-color: mediumpurple;
+}
+
+.rebeccaPurple {
+    background-color: rebeccapurple;
+}
+
+.blueViolet {
+    background-color: blueviolet;
+}
+
+.darkViolet {
+    background-color: darkviolet;
+}
+
+.darkViolet {
+    background-color: darkviolet;
+}
+
+.darkOrchid {
+    background-color: darkorchid;
+}
+
+.darkMagenta {
+    background-color: darkmagenta;
+}
+
+.purple {
+    background-color: purple;
+}
+.indigo {
+    background-color: indigo;
+}
+
+.slateBlue {
+    background-color: slateblue;
+}
+
+.darkSlateBlue {
+    background-color: darkslateblue;
+}
+
+.mediumSlateBlue {
+    background-color: mediumslateblue;
+}
+
+/* GREEN */
+
+.greenYellow {
+    background-color: greenyellow;
+}
+
+.chartreuse {
+    background-color: chartreuse;
+}
+
+.lawnGreen {
+    background-color: lawngreen;
+}
+
+.lime {
+    background-color: lime;
+}
+
+.limeGreen {
+    background-color: limegreen;
+}
+
+.paleGreen {
+    background-color: palegreen;
+}
+
+.lightGreen {
+    background-color: lightgreen;
+}
+
+.mediumSpringGreen {
+    background-color: mediumspringgreen;
+}
+.springGreen {
+    background-color: springgreen;
+}
+
+.mediumSeaGreen {
+    background-color: mediumseagreen;
+}
+
+.springGreen {
+    background-color: springgreen;
+}
+
+.mediumSeaGreen {
+    background-color: mediumseagreen;
+}
+
+.seaGreen {
+    background-color: seagreen;
+}
+
+.forestGreen {
+    background-color: forestgreen;
+}
+
+.green {
+    background-color: green;
+}
+
+.darkGreen {
+    background-color: darkgreen;
+}
+
+.yellowGreen {
+    background-color: yellowgreen;
+}
+
+.oliveDrab {
+    background-color: olivedrab;
+}
+
+.olive {
+    background-color: olive;
+}
+
+.darkOliveGreen {
+    background-color: darkolivegreen;
+}
+
+.mediumAquamarine {
+    background-color: mediumaquamarine;
+}
+
+.darkSeaGreen {
+    background-color: darkseagreen;
+}
+
+.lightSeaGreen {
+    background-color: lightseagreen;
+}
+
+.darkCyan {
+    background-color: darkcyan;
+}
+
+.teal {
+    background-color: teal;
+}
+
+/* BLUE */
+
+.aqua {
+    background-color: aqua;
+}
+.cyan {
+    background-color: cyan;
+}
+.lightCyan {
+    background-color: lightcyan;
+}
+
+.paleTurquoise {
+    background-color: paleturquoise;
+}
+
+.aquamarine {
+    background-color: aquamarine;
+}
+
+.turquoise {
+    background-color: turquoise;
+}
+
+.mediumTurquoise {
+    background-color: mediumturquoise;
+}
+
+.darkTurquoise {
+    background-color: darkturquoise;
+}
+
+.cadetBlue {
+    background-color: cadetblue;
+}
+
+.steelBlue {
+    background-color: steelblue;
+}
+
+.lightSteelBlue {
+    background-color: lightsteelblue;
+}
+
+.powderBlue {
+    background-color: powderblue;
+}
+
+.lightBlue {
+    background-color: lightblue;
+}
+
+.skyBlue {
+    background-color: skyblue;
+}
+
+.lightSkyBlue {
+    background-color: lightskyblue;
+}
+
+.deepSkyBlue {
+    background-color: deepskyblue;
+}
+
+.dodgerBlue {
+    background-color: dodgerblue;
+}
+
+.cornflowerBlue {
+    background-color: cornflowerblue;
+}
+
+.mediumSlateBlue {
+    background-color: mediumslateblue;
+}
+
+.royalBlue {
+    background-color: royalblue;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.mediumBlue {
+    background-color: mediumblue;
+}
+
+.darkBlue {
+    background-color: darkblue;
+}
+
+.navy {
+    background-color: navy;
+}
+
+.midnightBlue {
+    background-color: midnightblue;
+}
+
