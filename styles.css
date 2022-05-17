@@ -7,17 +7,90 @@
 html {
     font-size: 16px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    /* font-family: "Asap", sans-serif; */
 }
 
 th {
     background: gray;
+    padding: 5px 10px 5px 10px;
+    /* position: fixed; */
+    /* width: 100%; */
+    /* position: sticky; */
+    /* top: 0; */
+    /* top: 28.4px; */
+    /* position: fixed; */
+    /* top: 0; */
+    /* left:100px; */
+    /* width: 33%; */
 }
 
+/* 486.487 */
+/* 28.4 */
+
 td,
-th,
 tr {
     padding: 5px 10px;
 }
+
+th:nth-child(1) {
+    width: 47.2px;
+    /* height:28.4px; */
+}
+
+th:nth-child(2) {
+    width: 176.113px;
+    /* height:28.4px; */
+}
+
+th:nth-child(3) {
+    width: 86.55px;
+    /* height:28.4px; */
+}
+
+th:nth-child(4) {
+    width: 151.825px;
+    /* height:28.4px; */
+}
+
+thead {
+    /* word-spacing:118px; */
+    /* border: none; */
+
+    /* position:sticky; */
+}
+
+table {
+    /* overflow-y: auto; */
+    /* height: 50vh; */
+    /* height:100%; */
+    /* height: 100vh; */
+
+    /* height: calc(100vh - 28.4px); */
+    /* height: calc(100vh - 28.4px); */
+}
+
+tbody {
+    /* position: relative; */
+    /* top: 26px; */
+    display: block;
+    /* max-height: 90vh; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* max-height: calc(100vh - 28.4px); */
+    /* position: relative; */
+    /* top: 28.4px; */
+    /* max-height: calc(100vh - 30px); */
+    /* max-height: calc(100vh - 28.4px); */
+    max-height: calc(100vh - 35.4px);
+}
+
+thead {
+    /* display: none; */
+}
+
+/* table {
+    float: right;
+} */
 
 .colorName,
 .RGB-code,
@@ -25,121 +98,102 @@ tr {
     cursor: pointer;
 }
 
-#snackbar {
-    visibility: hidden;
-    min-width: 100px;
-    margin-left: -125px;
+.HEX-code {
     text-align: center;
-    border-radius: 10px;
-    padding: 0.5rem;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    bottom: 70px;
-    font-size: 1rem;
-    color: white;
-    background-color: #333;
 }
 
-@keyframes fadeout {
-    from {
-        bottom: 30px;
-        opacity: 1;
-    }
-    to {
-        bottom: 0;
-        opacity: 0;
-    }
-}
-
-#snackbar.show {
-    visibility: visible;
-}
-
-/* LABELS */
+/* COLOR CATEGORY LABELS */
 
 .vertical {
     writing-mode: vertical-lr;
     text-orientation: upright;
+    /* font-size: 2rem; */
+    font-family: "Asap", sans-serif;
 }
 .red-label {
     background-color: gray;
-    color: darkred;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
+    color: darkred;
 }
 
 .pink-label {
     background-color: gray;
-    color: hotpink;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
+    color: deeppink;
 }
 
 .orange-label {
     background-color: gray;
-    color: tomato;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
+    color: orangered;
 }
 
 .yellow-label {
     background-color: gray;
-    color: yellow;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
+    color: khaki;
 }
 
 .purple-label {
     background-color: gray;
-    color: purple;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
+    color: indigo;
 }
 
 .green-label {
     background-color: gray;
-    color: lime;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
+    color: palegreen;
 }
 
 .blue-label {
     background-color: gray;
-    color: blue;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
+    color: paleturquoise;
 }
 
 .brown-label {
     background-color: gray;
-    color: saddlebrown;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
+    color: saddlebrown;
 }
 
 .white-label {
     background-color: gray;
-    color: whitesmoke;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
+    color: whitesmoke;
 }
 
 .gray-label {
     background-color: gray;
-    color: darkslategray;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
+    color: silver;
+}
+
+.colorName,
+.HEX-code,
+.RGB-code {
+    /* font-weight: bold; */
 }
 
 /* REDS */
@@ -202,7 +256,6 @@ tr {
 
 .mediumVioletRed {
     background-color: MediumVioletRed;
-    /* color: white; */
 }
 
 .paleVioletRed {
@@ -703,7 +756,7 @@ tr {
     background-color: mistyrose;
 }
 
-/* GRAY */
+/* GRAYS */
 
 .gainsboro {
     background-color: gainsboro;
@@ -742,4 +795,37 @@ tr {
 .black {
     background-color: black;
     color: #c2c2c2;
+}
+
+/* TOAST */
+
+#snackbar {
+    visibility: hidden;
+    min-width: 100px;
+    margin-left: -125px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.5rem;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 70px;
+    font-size: 1rem;
+    color: white;
+    background-color: #333;
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+#snackbar.show {
+    visibility: visible;
 }
