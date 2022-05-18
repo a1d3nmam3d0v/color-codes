@@ -4,51 +4,68 @@
     box-sizing: border-box;
 }
 
-html {
+html:not(tbody) {
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+        /* overflow: scroll; */
+
+
     font-size: 16px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     /* font-family: "Asap", sans-serif; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-family: monospace; */
+}
+
+body {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* overflow: hidden; */
+        /* overflow: scroll; */
+
 }
 
 th {
     background: gray;
-    padding: 5px 10px 5px 10px;
-    /* position: fixed; */
-    /* width: 100%; */
-    /* position: sticky; */
-    /* top: 0; */
-    /* top: 28.4px; */
-    /* position: fixed; */
-    /* top: 0; */
-    /* left:100px; */
-    /* width: 33%; */
+    padding-bottom: 15px;
+    /* height: 50px; */
+}
+
+.hide {
+    font-weight: normal;
+    visibility: hidden;
 }
 
 /* 486.487 */
 /* 28.4 */
 
-td,
-tr {
-    padding: 5px 10px;
+td {
+    /* padding: 10px; */
 }
 
 th:nth-child(1) {
-    width: 47.2px;
+    /* width: 47.2px; */
     /* height:28.4px; */
+
+    /* text-align: center;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    text-orientation: upright; */
 }
 
 th:nth-child(2) {
-    width: 176.113px;
+    /* width: 175px; */
     /* height:28.4px; */
 }
 
 th:nth-child(3) {
-    width: 86.55px;
+    /* width: 91px; */
     /* height:28.4px; */
 }
 
 th:nth-child(4) {
-    width: 151.825px;
+    /* width: 143px; */
     /* height:28.4px; */
 }
 
@@ -67,6 +84,9 @@ table {
 
     /* height: calc(100vh - 28.4px); */
     /* height: calc(100vh - 28.4px); */
+
+    /* height: 100vh; */
+    /* height: calc(100vh - 55px); */
 }
 
 tbody {
@@ -81,7 +101,8 @@ tbody {
     /* top: 28.4px; */
     /* max-height: calc(100vh - 30px); */
     /* max-height: calc(100vh - 28.4px); */
-    max-height: calc(100vh - 35.4px);
+
+    max-height: calc(100vh - 58px);
 }
 
 thead {
@@ -98,23 +119,24 @@ thead {
     cursor: pointer;
 }
 
-.HEX-code {
+/* .HEX-code {
     text-align: center;
-}
+} */
 
 /* COLOR CATEGORY LABELS */
 
-.vertical {
+.vertical,
+th:nth-child(1) {
     writing-mode: vertical-lr;
     text-orientation: upright;
-    /* font-size: 2rem; */
+    font-size: 1.5rem;
     font-family: "Asap", sans-serif;
 }
 .red-label {
     background-color: gray;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: darkred;
 }
 
@@ -122,7 +144,7 @@ thead {
     background-color: gray;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: deeppink;
 }
 
@@ -130,7 +152,7 @@ thead {
     background-color: gray;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: orangered;
 }
 
@@ -138,7 +160,7 @@ thead {
     background-color: gray;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: khaki;
 }
 
@@ -146,7 +168,7 @@ thead {
     background-color: gray;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: indigo;
 }
 
@@ -154,7 +176,7 @@ thead {
     background-color: gray;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: palegreen;
 }
 
@@ -162,7 +184,7 @@ thead {
     background-color: gray;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: paleturquoise;
 }
 
@@ -170,7 +192,7 @@ thead {
     background-color: gray;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: saddlebrown;
 }
 
@@ -178,7 +200,7 @@ thead {
     background-color: gray;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: whitesmoke;
 }
 
@@ -186,7 +208,7 @@ thead {
     background-color: gray;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: silver;
 }
 
@@ -228,12 +250,11 @@ thead {
 
 .fireBrick {
     background-color: firebrick;
-    /* color: white; */
 }
 
 .darkRed {
     background-color: darkred;
-    /* color: white; */
+    color: gainsboro;
 }
 
 /* PINKS */
@@ -366,11 +387,6 @@ thead {
     background-color: mediumpurple;
 }
 
-.rebeccaPurple {
-    background-color: rebeccapurple;
-    color: #c2c2c2;
-}
-
 .blueViolet {
     background-color: blueviolet;
 }
@@ -394,22 +410,28 @@ thead {
 .purple {
     background-color: purple;
 }
-.indigo {
-    background-color: indigo;
-    color: #c2c2c2;
-}
 
 .slateBlue {
     background-color: slateblue;
 }
 
-.darkSlateBlue {
-    background-color: darkslateblue;
-    color: #c2c2c2;
-}
-
 .mediumSlateBlue {
     background-color: mediumslateblue;
+}
+
+.darkSlateBlue {
+    background-color: darkslateblue;
+    color: gainsboro;
+}
+
+.indigo {
+    background-color: indigo;
+    color: gainsboro;
+}
+
+.rebeccaPurple {
+    background-color: rebeccapurple;
+    color: gainsboro;
 }
 
 /* GREENS */
@@ -595,27 +617,27 @@ thead {
 
 .blue {
     background-color: blue;
-    color: #c2c2c2;
+    color: gainsboro;
 }
 
 .mediumBlue {
     background-color: mediumblue;
-    color: #c2c2c2;
+    color: gainsboro;
 }
 
 .darkBlue {
     background-color: darkblue;
-    color: #c2c2c2;
+    color: gainsboro;
 }
 
 .navy {
     background-color: navy;
-    color: #c2c2c2;
+    color: gainsboro;
 }
 
 .midnightBlue {
     background-color: midnightblue;
-    color: #c2c2c2;
+    color: gainsboro;
 }
 
 /* BROWNS */
@@ -685,6 +707,7 @@ thead {
 
 .maroon {
     background-color: maroon;
+    color: gainsboro;
 }
 
 /* WHITES */
@@ -791,10 +814,11 @@ thead {
 
 .darkSlateGray {
     background-color: darkslategray;
+    color: gainsboro;
 }
 .black {
     background-color: black;
-    color: #c2c2c2;
+    color: gainsboro;
 }
 
 /* TOAST */

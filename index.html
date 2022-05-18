@@ -13,6 +13,8 @@
     </head>
 
     <body>
+        <div id="snackbar"><p>Copied</p></div>
+
         <!-- COLOR TABLE -->
         <!-- <table
         style="width:470px;">
@@ -29,10 +31,22 @@
         <table>
             <!-- <thead> -->
             <!-- <tr> -->
-            <th></th>
-            <th>NAME</th>
-            <th>HEX</th>
-            <th>RGB</th>
+            <th style="color:gray">i</th>
+            <th>
+                <span class="hide">LightGoldenrodYellow</span>
+                <br />
+                NAME
+            </th>
+            <th>
+                <span class="hide">#DCDCDC</span>
+                <br />
+                HEX
+            </th>
+            <th>
+                <span class="hide">rgb(255, 235, 205)</span>
+                <br />
+                RGB
+            </th>
             <!-- </tr> -->
             <!-- </thead> -->
             <!-- RED -->
@@ -271,11 +285,7 @@
                     <td class="HEX-code" onclick="copy(this)">#9370DB</td>
                     <td class="RGB-code" onclick="copy(this)">rgb(147, 112, 219)</td>
                 </tr>
-                <tr class="rebeccaPurple">
-                    <td class="colorName" onclick="copy(this)">RebeccaPurple</td>
-                    <td class="HEX-code" onclick="copy(this)">#663399</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(102, 51, 153)</td>
-                </tr>
+
                 <tr class="blueViolet">
                     <td class="colorName" onclick="copy(this)">BlueViolet</td>
                     <td class="HEX-code" onclick="copy(this)">#8A2BE2</td>
@@ -301,26 +311,34 @@
                     <td class="HEX-code" onclick="copy(this)">#800080</td>
                     <td class="RGB-code" onclick="copy(this)">rgb(128, 0, 128)</td>
                 </tr>
-                <tr class="indigo">
-                    <td class="colorName" onclick="copy(this)">Indigo</td>
-                    <td class="HEX-code" onclick="copy(this)">#4B0082</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(75, 0, 130)</td>
-                </tr>
+
                 <tr class="slateBlue">
                     <td class="colorName" onclick="copy(this)">SlateBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#6A5ACD</td>
                     <td class="RGB-code" onclick="copy(this)">rgb(106, 90, 205)</td>
+                </tr>
+
+                <tr class="mediumSlateBlue">
+                    <td class="colorName" onclick="copy(this)">MediumSlateBlue</td>
+                    <td class="HEX-code" onclick="copy(this)">#7B68EE</td>
+                    <td class="RGB-code" onclick="copy(this)">rgb(123, 104, 238)</td>
                 </tr>
                 <tr class="darkSlateBlue">
                     <td class="colorName" onclick="copy(this)">DarkSlateBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#483D8B</td>
                     <td class="RGB-code" onclick="copy(this)">rgb(72, 61, 139)</td>
                 </tr>
-                <tr class="mediumSlateBlue">
-                    <td class="colorName" onclick="copy(this)">MediumSlateBlue</td>
-                    <td class="HEX-code" onclick="copy(this)">#7B68EE</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(123, 104, 238)</td>
+                <tr class="indigo">
+                    <td class="colorName" onclick="copy(this)">Indigo</td>
+                    <td class="HEX-code" onclick="copy(this)">#4B0082</td>
+                    <td class="RGB-code" onclick="copy(this)">rgb(75, 0, 130)</td>
                 </tr>
+                <tr class="rebeccaPurple">
+                    <td class="colorName" onclick="copy(this)">RebeccaPurple</td>
+                    <td class="HEX-code" onclick="copy(this)">#663399</td>
+                    <td class="RGB-code" onclick="copy(this)">rgb(102, 51, 153)</td>
+                </tr>
+
                 <!-- </tbody> -->
 
                 <!-- GREEN -->
@@ -819,7 +837,5 @@
                 </tr>
             </tbody>
         </table>
-
-
     </body>
 </html>
