@@ -1,3 +1,5 @@
+// TOAST "COPIED" POPUP
+
 function copy(that) {
     var inp = document.createElement("input");
     document.body.appendChild(inp);
@@ -16,11 +18,5 @@ function toast() {
 
     setTimeout(function () {
         x.className = x.className.replace("show", "");
-    },500);
+    }, 500);
 }
-
-
-// THEME //
-
-
-

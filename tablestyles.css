@@ -16,16 +16,12 @@ td {
     /* color: black; */
 }
 
-
-
 .colorName,
 .RGB-code,
 .HEX-code {
     cursor: pointer;
     font-family: proxima-nova-extra-condensed, sans-serif;
 }
-
-
 
 .colorName {
     white-space: pre-wrap;
@@ -686,5 +682,5 @@ td {
 }
 .black {
     background-color: black;
-    color: white;    
+    color: white;
 }
