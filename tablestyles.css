@@ -31,8 +31,7 @@ td {
 
 .leftTable .vertical,
 .leftTable th:nth-child(5),
-.rightTable .vertical,
-.rightTable th:nth-child(1) {
+.rightTable .vertical {
     writing-mode: vertical-lr;
     text-orientation: upright;
     font-size: 1.4rem;
