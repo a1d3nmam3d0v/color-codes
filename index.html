@@ -5,963 +5,990 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CSS Colors</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="https://use.typekit.net/bud7tad.css" />
-        <link rel="stylesheet" href="tablestyles.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css" />
-        <script type="text/javascript" src="script.js"></script>
+        <!-- rubik font -->
+        <link rel="stylesheet" href="https://use.typekit.net/vmr2vml.css" />
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="stylesheet" href="styles/tablestyles.css" />
+        <!-- media queries -->
+        <link rel="stylesheet" href="styles/mediaqueries.css" />
+        <!-- js -->
+        <script type="text/javascript" src="/scripts/script.js"></script>
     </head>
 
     <body>
-        <mark>To copy a name or code just click on it</mark>
-
-        <!-- "TOAST" POP-UP -->
+        <!-- pop-up "copied" when color name or code is clicked -->
         <div id="toast">Copied</div>
-        <div class="middle">
-            <header>
-                <h1>
-                    CSS Colors
-                    <br />
-                    Names and Codes
-                </h1>
-            </header>
-
-            <!-- EXTERNAL CSS -->
-            <section>
-                <h2>External CSS</h2>
-                <p>
-                    External style sheets (.CSS files) are connected with a
-                    <span class="highlight">&lt;link&gt;</span>
-                    element in the
-                    <span class="highlight">&lt;head&gt;</span>
-                    of the HTML
-                </p>
-
-                <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-    &lt;head&gt;
-        <span class="highlight">&lt;link rel="stylesheet" href="exampleStyleSheet.CSS" /&gt;</span>
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Heading&lt/h1&gt;
-            &lt;p&gt;The external css file is linked above&lt/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-
-                <!-- INLINE CSS -->
-                <h2>Inline CSS</h2>
-                <div>
-                    <code>
-                        &lt;p
-                        <span class="highlight">style="color:darkorange;"</span>
-                        &gt;
-                    </code>
-                    <span class="example a">Styles can be applied directly in the HTML by adding a "style" attribute—containing any CSS property—to an element.</span>
-                    <code>&lt;/p&gt;</code>
-                </div>
-            </section>
-
-            <!-- COLOR NAMES -->
-            <section>
-                <h2>Color names</h2>
-                <p>
-                    Colors can be set with predefined names.
-                    <br />
-                    Modern browsers support 140 different color keywords.
-                </p>
-                <pre><code>p {
-  color: green;          <span class="comment">/* this will make your text green */</span>
- }</code></pre>
-                <span class="example b">And it will look like this</span>
-                <pre><code>p {  
-  color: blue;              <span class="comment">/* blue text */</span>
-  background-color: pink;   <span class="comment">/* pink background */</span>
- }</code></pre>
-                <span class="example c">this is blue text with a pink background</span>
-            </section>
-
-            <!-- HEX CODES -->
-            <section>
-                <h2>Hex codes</h2>
-                <p>
-                    <em>Hexadecimal</em>
-                    color codes are written in
-                    <span class="highlight">#RRGGBB</span>
-                    format, representing levels of red, green, and blue.
-                    <br />
-                    Each of the six character can be any combination of 0-9 and A-F (lowest is 00; highest is FF).
-                    <br />
-                    16,777,216 possible combinations/colors.
-                </p>
-                <pre><code>  #r {background-color: #ff0000;}        <span class="comment">/*red*/</span>
-  #g {background-color: #00ff00;}       <span class="comment">/*green*/</span>
-  #b {background-color: #0000ff;}       <span class="comment">/*blue*/</span></code></pre>
-                <p class="red">red</p>
-                <p class="lime">green</p>
-                <p class="blue">blue</p>
-            </section>
-
-            <!-- RGB VALUES -->
-            <section>
-                <h2>RGB values</h2>
-                <p>
-                    The syntax to set colors in CSS using an RGB value is
-                    <span class="highlight">rgb(red,green,blue)</span>
-                    <br />
-                    Three numbers between 0 and 255, or a percentage from 0% to 100%, specify the intensity of red, green, and blue.
-                </p>
-                <!-- SQUARES -->
-                <div class="box-wrapper">
-                    <!-- prettier-ignore -->
-                    <div class="black box">black<br />0</div>
-                    <!-- prettier-ignore -->
-                    <div class="dimGray box">dim&shy;gray<br />105</div>
-                    <!-- prettier-ignore -->
-                    <div class="gray box">gray<br />128</div>
-                    <!-- prettier-ignore -->
-                    <div class="darkGray box">dark&shy;gray<br />169</div>
-                    <!-- prettier-ignore -->
-                    <div class="lightGray box">light&shy;gray<br />211</div>
-                    <!-- prettier-ignore -->
-                    <div class="white box">white<br />255</div>
-                </div>
-
-                <p>
-                    Black is the "absense of color" therefore
-                    <span class="highlight">rgb(0,0,0)</span>
-                    = black.
-                    <br />
-                    To make gray, set all 3 values to the same number. Numbers closer to 0 are darker.
-                    <br />
-                    White is the lightest possible color and is made when all 3 numbers are set at the max, 255.
-                </p>
-            </section>
-        </div>
 
         <!-- LEFT TABLE  -->
-        <table class="leftTable">
+        <table class="left-table">
             <tr>
-                <th colspan="2">NAME</th>
+                <th></th>
+                <th>NAME</th>
                 <th>HEX</th>
-                <th colspan="2">RGB</th>
+                <th>RGB</th>
+                <th></th>
             </tr>
-
             <tbody>
-                <!-- PINKS-->
-                <!-- PINK LABEL -->
-                <td rowspan="7" class="pinks label">
-                    <p class="vertical">PINKS</p>
-                </td>
-                <tr class="pink">
-                    <td class="colorName" onclick="copy(this)">Pink</td>
-                    <td class="HEX-code" onclick="copy(this)">#FFC0CB</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,192,203)</td>
-                    <!-- PINK LABEL -->
-                    <td rowspan="6" class="pinks label">
-                        <p class="vertical">PINKS</p>
-                    </td>
-                </tr>
-                <tr class="lightPink">
-                    <td class="colorName" onclick="copy(this)">LightPink</td>
-                    <td class="HEX-code" onclick="copy(this)">#FFB6C1</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,182,193)</td>
-                </tr>
-                <tr class="hotPink">
-                    <td class="colorName" onclick="copy(this)">HotPink</td>
-                    <td class="HEX-code" onclick="copy(this)">#FF69B4</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,105,180)</td>
-                </tr>
-                <tr class="deepPink">
-                    <td class="colorName" onclick="copy(this)">DeepPink</td>
-                    <td class="HEX-code" onclick="copy(this)">#FF1493</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,020,147)</td>
-                </tr>
-                <tr class="mediumVioletRed">
-                    <td class="colorName" onclick="copy(this)">MediumVioletRed</td>
-                    <td class="HEX-code" onclick="copy(this)">#C71585</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(199,021,133)</td>
-                </tr>
-                <tr class="paleVioletRed">
-                    <td class="colorName" onclick="copy(this)">PaleVioletRed</td>
-                    <td class="HEX-code" onclick="copy(this)">#DB7093</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(219,112,147)</td>
-                </tr>
-                <!-- REDS -->
-                <!-- RED LABEL -->
-                <td rowspan="9" class="reds label">
-                    <p class="vertical">REDS</p>
+                <!-- Reds -->
+                <!-- red label -->
+                <td rowspan="10" class="reds label">
+                    <span class="vertical">REDS</span>
                 </td>
                 <tr class="indianRed">
-                    <td><span class="colorName" onclick="copy(this)">IndianRed</span></td>
-                    <td><span class="HEX-code" onclick="copy(this)">#CD5C5C</span></td>
-                    <td><span class="RGB-code" onclick="copy(this)">rgb(205,092,092)</span></td>
-                    <!-- RED LABEL -->
-                    <td rowspan="8" class="reds label">
-                        <p class="vertical">REDS</p>
+                    <td class="color-name" onclick="copy(this)">IndianRed</td>
+                    <td class="HEX-code" onclick="copy(this)">#CD5C5C</td>
+                    <td class="RGB-code" onclick="copy(this)">(205,092,092)</td>
+                    <!-- red label -->
+                    <td rowspan="9" class="reds label">
+                        <span class="vertical">REDS</span>
                     </td>
                 </tr>
                 <tr class="lightCoral">
-                    <td class="colorName" onclick="copy(this)">LightCoral</td>
+                    <td class="color-name" onclick="copy(this)">LightCoral</td>
                     <td class="HEX-code" onclick="copy(this)">#F08080</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(240,128,128)</td>
+                    <td class="RGB-code" onclick="copy(this)">(240,128,128)</td>
                 </tr>
                 <tr class="salmon">
-                    <td class="colorName" onclick="copy(this)">Salmon</td>
+                    <td class="color-name" onclick="copy(this)">Salmon</td>
                     <td class="HEX-code" onclick="copy(this)">#FA8072</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(250,128,114)</td>
+                    <td class="RGB-code" onclick="copy(this)">(250,128,114)</td>
+                </tr>
+
+                <tr class="lightSalmon">
+                    <td class="color-name" onclick="copy(this)">LightSalmon</td>
+                    <td class="HEX-code" onclick="copy(this)">#FFA07A</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,160,122)</td>
                 </tr>
                 <tr class="darkSalmon">
-                    <td class="colorName" onclick="copy(this)">DarkSalmon</td>
+                    <td class="color-name" onclick="copy(this)">DarkSalmon</td>
                     <td class="HEX-code" onclick="copy(this)">#E9967A</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(233,150,122)</td>
+                    <td class="RGB-code" onclick="copy(this)">(233,150,122)</td>
                 </tr>
                 <tr class="crimson">
-                    <td class="colorName" onclick="copy(this)">Crimson</td>
+                    <td class="color-name" onclick="copy(this)">Crimson</td>
                     <td class="HEX-code" onclick="copy(this)">#DC143C</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(220,020,060)</td>
+                    <td class="RGB-code" onclick="copy(this)">(220,020,060)</td>
                 </tr>
                 <tr class="red">
-                    <td class="colorName" onclick="copy(this)">Red</td>
+                    <td class="color-name" onclick="copy(this)">Red</td>
                     <td class="HEX-code" onclick="copy(this)">#FF0000</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,000,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,000,000)</td>
                 </tr>
                 <tr class="fireBrick">
-                    <td class="colorName" onclick="copy(this)">FireBrick</td>
+                    <td class="color-name" onclick="copy(this)">FireBrick</td>
                     <td class="HEX-code" onclick="copy(this)">#B22222</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(178,034,034)</td>
+                    <td class="RGB-code" onclick="copy(this)">(178,034,034)</td>
                 </tr>
                 <tr class="darkRed">
-                    <td class="colorName" onclick="copy(this)">DarkRed</td>
+                    <td class="color-name" onclick="copy(this)">DarkRed</td>
                     <td class="HEX-code" onclick="copy(this)">#8B0000</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(139,000,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(139,000,000)</td>
                 </tr>
-                <!-- ORANGES -->
-                <!-- ORANGE LABEL -->
-                <td rowspan="8" class="oranges label">
-                    <p class="vertical">ORANGES</p>
+                <!-- Oranges -->
+                <!-- orange label -->
+                <td rowspan="7" class="oranges label">
+                    <span class="vertical">ORANGES</span>
                 </td>
-                <tr class="lightSalmon">
-                    <td class="colorName" onclick="copy(this)">LightSalmon</td>
-                    <td class="HEX-code" onclick="copy(this)">#FFA07A</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,160,122)</td>
-                    <!-- ORANGE LABEL -->
-                    <td rowspan="7" class="oranges label">
-                        <p class="vertical">ORANGES</p>
+                <tr class="coral">
+                    <td class="color-name" onclick="copy(this)">Coral</td>
+                    <td class="HEX-code" onclick="copy(this)">#FF7F50</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,127,080)</td>
+                    <!-- orange label -->
+                    <td rowspan="6" class="oranges label">
+                        <span class="vertical">ORANGES</span>
                     </td>
                 </tr>
-                <tr class="coral">
-                    <td class="colorName" onclick="copy(this)">Coral</td>
-                    <td class="HEX-code" onclick="copy(this)">#FF7F50</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,127,080)</td>
-                </tr>
                 <tr class="tomato">
-                    <td class="colorName" onclick="copy(this)">Tomato</td>
+                    <td class="color-name" onclick="copy(this)">Tomato</td>
                     <td class="HEX-code" onclick="copy(this)">#FF6347</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,099,071)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,099,071)</td>
                 </tr>
                 <tr class="orangeRed">
-                    <td class="colorName" onclick="copy(this)">OrangeRed</td>
+                    <td class="color-name" onclick="copy(this)">OrangeRed</td>
                     <td class="HEX-code" onclick="copy(this)">#FF4500</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,069,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,069,000)</td>
                 </tr>
                 <tr class="darkOrange">
-                    <td class="colorName" onclick="copy(this)">DarkOrange</td>
+                    <td class="color-name" onclick="copy(this)">DarkOrange</td>
                     <td class="HEX-code" onclick="copy(this)">#FF8C00</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,140,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,140,000)</td>
                 </tr>
                 <tr class="orange">
-                    <td class="colorName" onclick="copy(this)">Orange</td>
+                    <td class="color-name" onclick="copy(this)">Orange</td>
                     <td class="HEX-code" onclick="copy(this)">#FFA500</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,165,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,165,000)</td>
                 </tr>
                 <tr class="gold">
-                    <td class="colorName" onclick="copy(this)">Gold</td>
+                    <td class="color-name" onclick="copy(this)">Gold</td>
                     <td class="HEX-code" onclick="copy(this)">#FFD700</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,215,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,215,000)</td>
                 </tr>
-                <!-- YELLOWS -->
-                <!-- YELLOW LABEL -->
+                <!-- Yellows -->
+                <!-- yellow label -->
                 <td rowspan="11" class="yellows label">
-                    <p class="vertical">YELLOWS</p>
+                    <span class="vertical">YELLOWS</span>
                 </td>
                 <tr class="lightYellow">
-                    <td class="colorName" onclick="copy(this)">LightYellow</td>
+                    <td class="color-name" onclick="copy(this)">LightYellow</td>
                     <td class="HEX-code" onclick="copy(this)">#FFFFE0</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,255,224)</td>
-                    <!-- YELLOW LABEL -->
+                    <td class="RGB-code" onclick="copy(this)">(255,255,224)</td>
+                    <!-- yellow label -->
                     <td rowspan="10" class="yellows label">
-                        <p class="vertical">YELLOWS</p>
+                        <span class="vertical">YELLOWS</span>
                     </td>
                 </tr>
                 <tr class="lemonChiffon">
-                    <td class="colorName" onclick="copy(this)">LemonChiffon</td>
+                    <td class="color-name" onclick="copy(this)">LemonChiffon</td>
                     <td class="HEX-code" onclick="copy(this)">#FFFACD</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,250,205)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,250,205)</td>
                 </tr>
                 <tr class="lightGoldenrodYellow">
-                    <td class="colorName" onclick="copy(this)">LightGoldenrodYellow</td>
+                    <td class="color-name" onclick="copy(this)">LightGoldenrodYellow</td>
                     <td class="HEX-code" onclick="copy(this)">#FAFAD2</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(250,250,210</td>
+                    <td class="RGB-code" onclick="copy(this)">(250,250,210</td>
                 </tr>
                 <tr class="papayaWhip">
-                    <td class="colorName" onclick="copy(this)">PapayaWhip</td>
+                    <td class="color-name" onclick="copy(this)">PapayaWhip</td>
                     <td class="HEX-code" onclick="copy(this)">#FFEFD5</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,239,213)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,239,213)</td>
                 </tr>
                 <tr class="moccasin">
-                    <td class="colorName" onclick="copy(this)">Moccasin</td>
+                    <td class="color-name" onclick="copy(this)">Moccasin</td>
                     <td class="HEX-code" onclick="copy(this)">#FFE4B5</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,228,181)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,228,181)</td>
                 </tr>
                 <tr class="peachPuff">
-                    <td class="colorName" onclick="copy(this)">PeachPuff</td>
+                    <td class="color-name" onclick="copy(this)">PeachPuff</td>
                     <td class="HEX-code" onclick="copy(this)">#FFDAB9</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,218,185)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,218,185)</td>
                 </tr>
                 <tr class="paleGoldenrod">
-                    <td class="colorName" onclick="copy(this)">PaleGoldenRod</td>
+                    <td class="color-name" onclick="copy(this)">PaleGoldenrod</td>
                     <td class="HEX-code" onclick="copy(this)">#EEE8AA</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(238,232,170)</td>
+                    <td class="RGB-code" onclick="copy(this)">(238,232,170)</td>
                 </tr>
                 <tr class="khaki">
-                    <td class="colorName" onclick="copy(this)">Khaki</td>
+                    <td class="color-name" onclick="copy(this)">Khaki</td>
                     <td class="HEX-code" onclick="copy(this)">#F0E68C</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(240,230,140)</td>
+                    <td class="RGB-code" onclick="copy(this)">(240,230,140)</td>
                 </tr>
                 <tr class="yellow">
-                    <td class="colorName" onclick="copy(this)">Yellow</td>
+                    <td class="color-name" onclick="copy(this)">Yellow</td>
                     <td class="HEX-code" onclick="copy(this)">#FFFF00</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,255,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,255,000)</td>
                 </tr>
                 <tr class="darkKhaki">
-                    <td class="colorName" onclick="copy(this)">DarkKhaki</td>
+                    <td class="color-name" onclick="copy(this)">DarkKhaki</td>
                     <td class="HEX-code" onclick="copy(this)">#BDB76B</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(189,183,107)</td>
+                    <td class="RGB-code" onclick="copy(this)">(189,183,107)</td>
                 </tr>
-                <!-- GREENS -->
-                <!-- GREEN LABEL -->
+                <!-- Greens -->
+                <!-- green label -->
                 <td rowspan="20" class="greens label">
-                    <p class="vertical">GREENS</p>
+                    <span class="vertical">GREENS</span>
                 </td>
                 <tr class="greenYellow">
-                    <td class="colorName" onclick="copy(this)">GreenYellow</td>
+                    <td class="color-name" onclick="copy(this)">GreenYellow</td>
                     <td class="HEX-code" onclick="copy(this)">#ADFF2F</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(173,255,047)</td>
-                    <!-- GREEN LABEL -->
+                    <td class="RGB-code" onclick="copy(this)">(173,255,047)</td>
+                    <!-- green label -->
                     <td rowspan="19" class="greens label">
-                        <p class="vertical">GREENS</p>
+                        <span class="vertical">GREENS</span>
                     </td>
                 </tr>
                 <tr class="chartreuse">
-                    <td class="colorName" onclick="copy(this)">Chartreuse</td>
+                    <td class="color-name" onclick="copy(this)">Chartreuse</td>
                     <td class="HEX-code" onclick="copy(this)">#7FFF00</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(127,255,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(127,255,000)</td>
                 </tr>
                 <tr class="lawnGreen">
-                    <td class="colorName" onclick="copy(this)">LawnGreen</td>
+                    <td class="color-name" onclick="copy(this)">LawnGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#7CFC00</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(124,252,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(124,252,000)</td>
                 </tr>
                 <tr class="lime">
-                    <td class="colorName" onclick="copy(this)">Lime</td>
+                    <td class="color-name" onclick="copy(this)">Lime</td>
                     <td class="HEX-code" onclick="copy(this)">#00FF00</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,255,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,255,000)</td>
                 </tr>
                 <tr class="limeGreen">
-                    <td class="colorName" onclick="copy(this)">LimeGreen</td>
+                    <td class="color-name" onclick="copy(this)">LimeGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#32CD32</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(050,205,050)</td>
+                    <td class="RGB-code" onclick="copy(this)">(050,205,050)</td>
                 </tr>
                 <tr class="paleGreen">
-                    <td class="colorName" onclick="copy(this)">PaleGreen</td>
+                    <td class="color-name" onclick="copy(this)">PaleGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#98FB98</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(152,251,152)</td>
+                    <td class="RGB-code" onclick="copy(this)">(152,251,152)</td>
                 </tr>
                 <tr class="lightGreen">
-                    <td class="colorName" onclick="copy(this)">LightGreen</td>
+                    <td class="color-name" onclick="copy(this)">LightGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#90EE90</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(144,238,144)</td>
+                    <td class="RGB-code" onclick="copy(this)">(144,238,144)</td>
                 </tr>
                 <tr class="mediumSpringGreen">
-                    <td class="colorName" onclick="copy(this)">MediumSpringGreen</td>
+                    <td class="color-name" onclick="copy(this)">MediumSpringGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#00FA9A</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,250,154)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,250,154)</td>
                 </tr>
                 <tr class="springGreen">
-                    <td class="colorName" onclick="copy(this)">SpringGreen</td>
+                    <td class="color-name" onclick="copy(this)">SpringGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#00FF7F</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,255,127)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,255,127)</td>
                 </tr>
                 <tr class="mediumSeaGreen">
-                    <td class="colorName" onclick="copy(this)">MediumSeaGreen</td>
+                    <td class="color-name" onclick="copy(this)">MediumSeaGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#3CB371</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(060,179,113)</td>
+                    <td class="RGB-code" onclick="copy(this)">(060,179,113)</td>
                 </tr>
                 <tr class="seaGreen">
-                    <td class="colorName" onclick="copy(this)">SeaGreen</td>
+                    <td class="color-name" onclick="copy(this)">SeaGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#2E8B57</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(046,139,087)</td>
+                    <td class="RGB-code" onclick="copy(this)">(046,139,087)</td>
                 </tr>
                 <tr class="forestGreen">
-                    <td class="colorName" onclick="copy(this)">ForestGreen</td>
+                    <td class="color-name" onclick="copy(this)">ForestGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#228B22</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(034,139,034)</td>
+                    <td class="RGB-code" onclick="copy(this)">(034,139,034)</td>
                 </tr>
                 <tr class="green">
-                    <td class="colorName" onclick="copy(this)">Green</td>
+                    <td class="color-name" onclick="copy(this)">Green</td>
                     <td class="HEX-code" onclick="copy(this)">#008000</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,128,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,128,000)</td>
                 </tr>
                 <tr class="darkGreen">
-                    <td class="colorName" onclick="copy(this)">DarkGreen</td>
+                    <td class="color-name" onclick="copy(this)">DarkGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#006400</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,100,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,100,000)</td>
                 </tr>
                 <tr class="yellowGreen">
-                    <td class="colorName" onclick="copy(this)">YellowGreen</td>
+                    <td class="color-name" onclick="copy(this)">YellowGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#9ACD32</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(154,205,050)</td>
+                    <td class="RGB-code" onclick="copy(this)">(154,205,050)</td>
                 </tr>
                 <tr class="oliveDrab">
-                    <td class="colorName" onclick="copy(this)">OliveDrab</td>
+                    <td class="color-name" onclick="copy(this)">OliveDrab</td>
                     <td class="HEX-code" onclick="copy(this)">#6B8E23</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(107,142,035)</td>
+                    <td class="RGB-code" onclick="copy(this)">(107,142,035)</td>
                 </tr>
                 <tr class="olive">
-                    <td class="colorName" onclick="copy(this)">Olive</td>
+                    <td class="color-name" onclick="copy(this)">Olive</td>
                     <td class="HEX-code" onclick="copy(this)">#808000</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(128,128,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(128,128,000)</td>
                 </tr>
                 <tr class="darkOliveGreen">
-                    <td class="colorName" onclick="copy(this)">DarkOliveGreen</td>
+                    <td class="color-name" onclick="copy(this)">DarkOliveGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#556B2F</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(085,107,047)</td>
+                    <td class="RGB-code" onclick="copy(this)">(085,107,047)</td>
                 </tr>
                 <tr class="darkSeaGreen">
-                    <td class="colorName" onclick="copy(this)">DarkSeaGreen</td>
+                    <td class="color-name" onclick="copy(this)">DarkSeaGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#8FBC8B</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(143,188,139)</td>
+                    <td class="RGB-code" onclick="copy(this)">(143,188,139)</td>
                 </tr>
-                <!-- CYANS  -->
-                <!-- CYAN LABEL  -->
+                <!-- Cyans  -->
+                <!-- cyan label  -->
                 <td rowspan="14" class="cyans label">
-                    <p class="vertical">CYANS</p>
+                    <span class="vertical">CYANS</span>
                 </td>
                 <tr class="aqua">
-                    <td class="colorName" onclick="copy(this)">Aqua</td>
+                    <td class="color-name" onclick="copy(this)">Aqua</td>
                     <td class="HEX-code" onclick="copy(this)">#00FFFF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,255,255)</td>
-                    <!-- CYAN LABEL  -->
+                    <td class="RGB-code" onclick="copy(this)">(000,255,255)</td>
+                    <!-- cyan label  -->
                     <td rowspan="13" class="cyans label">
-                        <p class="vertical">CYANS</p>
+                        <span class="vertical">CYANS</span>
                     </td>
                 </tr>
                 <tr class="cyan">
-                    <td class="colorName" onclick="copy(this)">Cyan</td>
+                    <td class="color-name" onclick="copy(this)">Cyan</td>
                     <td class="HEX-code" onclick="copy(this)">#00FFFF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,255,255)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,255,255)</td>
                 </tr>
                 <tr class="lightCyan">
-                    <td class="colorName" onclick="copy(this)">LightCyan</td>
+                    <td class="color-name" onclick="copy(this)">LightCyan</td>
                     <td class="HEX-code" onclick="copy(this)">#E0FFFF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(224,255,255)</td>
+                    <td class="RGB-code" onclick="copy(this)">(224,255,255)</td>
                 </tr>
                 <tr class="paleTurquoise">
-                    <td class="colorName" onclick="copy(this)">PaleTurquoise</td>
+                    <td class="color-name" onclick="copy(this)">PaleTurquoise</td>
                     <td class="HEX-code" onclick="copy(this)">#AFEEEE</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(175,238,238)</td>
+                    <td class="RGB-code" onclick="copy(this)">(175,238,238)</td>
                 </tr>
                 <tr class="aquamarine">
-                    <td class="colorName" onclick="copy(this)">Aquamarine</td>
+                    <td class="color-name" onclick="copy(this)">Aquamarine</td>
                     <td class="HEX-code" onclick="copy(this)">#7FFFD4</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(127,255,212)</td>
+                    <td class="RGB-code" onclick="copy(this)">(127,255,212)</td>
                 </tr>
                 <tr class="mediumAquamarine">
-                    <td class="colorName" onclick="copy(this)">MediumAquamarine</td>
+                    <td class="color-name" onclick="copy(this)">MediumAquamarine</td>
                     <td class="HEX-code" onclick="copy(this)">#66CDAA</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(102,205,170)</td>
+                    <td class="RGB-code" onclick="copy(this)">(102,205,170)</td>
                 </tr>
                 <tr class="turquoise">
-                    <td class="colorName" onclick="copy(this)">Turquoise</td>
+                    <td class="color-name" onclick="copy(this)">Turquoise</td>
                     <td class="HEX-code" onclick="copy(this)">#40E0D0</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(064,224,208)</td>
+                    <td class="RGB-code" onclick="copy(this)">(064,224,208)</td>
                 </tr>
                 <tr class="mediumTurquoise">
-                    <td class="colorName" onclick="copy(this)">MediumTurquoise</td>
+                    <td class="color-name" onclick="copy(this)">MediumTurquoise</td>
                     <td class="HEX-code" onclick="copy(this)">#48D1CC</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(072,209,204)</td>
+                    <td class="RGB-code" onclick="copy(this)">(072,209,204)</td>
                 </tr>
                 <tr class="darkTurquoise">
-                    <td class="colorName" onclick="copy(this)">DarkTurquoise</td>
+                    <td class="color-name" onclick="copy(this)">DarkTurquoise</td>
                     <td class="HEX-code" onclick="copy(this)">#00CED1</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,206,209)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,206,209)</td>
                 </tr>
                 <tr class="cadetBlue">
-                    <td class="colorName" onclick="copy(this)">CadetBlue</td>
+                    <td class="color-name" onclick="copy(this)">CadetBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#5F9EA0</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(095,158,160)</td>
+                    <td class="RGB-code" onclick="copy(this)">(095,158,160)</td>
                 </tr>
                 <tr class="lightSeaGreen">
-                    <td class="colorName" onclick="copy(this)">LightSeaGreen</td>
+                    <td class="color-name" onclick="copy(this)">LightSeaGreen</td>
                     <td class="HEX-code" onclick="copy(this)">#20B2AA</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(032,178,170)</td>
+                    <td class="RGB-code" onclick="copy(this)">(032,178,170)</td>
                 </tr>
                 <tr class="darkCyan">
-                    <td class="colorName" onclick="copy(this)">DarkCyan</td>
+                    <td class="color-name" onclick="copy(this)">DarkCyan</td>
                     <td class="HEX-code" onclick="copy(this)">#008B8B</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,139,139)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,139,139)</td>
                 </tr>
                 <tr class="teal">
-                    <td class="colorName" onclick="copy(this)">Teal</td>
+                    <td class="color-name" onclick="copy(this)">Teal</td>
                     <td class="HEX-code" onclick="copy(this)">#008080</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,128,128)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,128,128)</td>
+                </tr>
+                <!-- Grays -->
+                <!-- gray label -->
+                <td rowspan="11" class="grays label">
+                    <span class="vertical">GRAYS</span>
+                </td>
+                <tr class="gainsboro">
+                    <td class="color-name" onclick="copy(this)">Gainsboro</td>
+                    <td class="HEX-code" onclick="copy(this)">#DCDCDC</td>
+                    <td class="RGB-code" onclick="copy(this)">(220,220,220)</td>
+                    <!-- gray label -->
+                    <td rowspan="10" class="grays label">
+                        <span class="vertical">GRAYS</span>
+                    </td>
+                </tr>
+                <tr class="lightGray">
+                    <td class="color-name" onclick="copy(this)">LightGray</td>
+                    <td class="HEX-code" onclick="copy(this)">#D3D3D3</td>
+                    <td class="RGB-code" onclick="copy(this)">(211,211,211)</td>
+                </tr>
+                <tr class="silver">
+                    <td class="color-name" onclick="copy(this)">Silver</td>
+                    <td class="HEX-code" onclick="copy(this)">#C0C0C0</td>
+                    <td class="RGB-code" onclick="copy(this)">(192,192,192)</td>
+                </tr>
+                <tr class="darkGray">
+                    <td class="color-name" onclick="copy(this)">DarkGray</td>
+                    <td class="HEX-code" onclick="copy(this)">#A9A9A9</td>
+                    <td class="RGB-code" onclick="copy(this)">(169,169,169)</td>
+                </tr>
+                <tr class="gray">
+                    <td class="color-name" onclick="copy(this)">Gray</td>
+                    <td class="HEX-code" onclick="copy(this)">#808080</td>
+                    <td class="RGB-code" onclick="copy(this)">(128,128,128)</td>
+                </tr>
+                <tr class="dimGray">
+                    <td class="color-name" onclick="copy(this)">DimGray</td>
+                    <td class="HEX-code" onclick="copy(this)">#696969</td>
+                    <td class="RGB-code" onclick="copy(this)">(105,105,105)</td>
+                </tr>
+                <tr class="lightSlateGray">
+                    <td class="color-name" onclick="copy(this)">LightSlateGray</td>
+                    <td class="HEX-code" onclick="copy(this)">#778899</td>
+                    <td class="RGB-code" onclick="copy(this)">(119,136,153)</td>
+                </tr>
+                <tr class="slateGray">
+                    <td class="color-name" onclick="copy(this)">SlateGray</td>
+                    <td class="HEX-code" onclick="copy(this)">#708090</td>
+                    <td class="RGB-code" onclick="copy(this)">(112,128,144)</td>
+                </tr>
+                <tr class="darkSlateGray">
+                    <td class="color-name" onclick="copy(this)">DarkSlateGray</td>
+                    <td class="HEX-code" onclick="copy(this)">#2F4F4F</td>
+                    <td class="RGB-code" onclick="copy(this)">(47,079,079)</td>
+                </tr>
+                <tr class="black">
+                    <td class="color-name" onclick="copy(this)">Black</td>
+                    <td class="HEX-code" onclick="copy(this)">#000000</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,000,000)</td>
                 </tr>
             </tbody>
         </table>
 
-        <!-- RIGHT SIDE TABLE -->
-        <table class="rightTable">
+        <!-- MIDDLE/MAIN -->
+        <div class="middle">
+            <header>
+                <h1 class="center">
+                    CSS Colors
+                    <br />
+                    Names & Codes
+                </h1>
+            </header>
+
+            <!-- #CSS Section -->
+            <section id="CSS">
+                <h2>Linking CSS</h2>
+                <h4 class="center">External-</h4>
+                <p>
+                    Style sheets (.CSS files) are connected with a
+                    <code>&lt;link&gt;</code>
+                    element in the
+                    <code>&lt;head&gt;</code>
+                    of the HTML.
+                </p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    <span class="highlight">&lt;link rel="stylesheet" href="styles.css"/&gt;</span>
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Heading&lt/h1&gt;
+      &lt;p&gt;The external css is linked above&lt/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <br />
+                <h4 class="center">Inline-</h4>
+                <p class="example-1">
+                    <code>&lt;p style="color:seagreen;"&gt;</code>
+                    Styles can be applied directly in the HTML by adding a "style" attribute—containing any CSS property—to an element.
+                    <code>&lt;/p&gt;</code>
+                </p>
+            </section>
+
+            <!-- #NAMES Section -->
+            <section id="NAMES">
+                <h2>Color names</h2>
+                <p>Color names are (case-insensitive) identifiers used to set specific colors.</p>
+                <p>Originally, there were just 16 standard colors supported by name:</p>
+                <div class="scroll-wrap">
+                    <div class="scroll">
+                        <div class="basic-color aqua">aqua</div>
+                        <div class="basic-color black FFF">black</div>
+                        <div class="basic-color blue FFF">blue</div>
+                        <div class="basic-color fuchsia">fuchsia</div>
+                        <div class="basic-color gray">gray</div>
+                        <div class="basic-color green FFF">green</div>
+                        <div class="basic-color lime">lime</div>
+                        <div class="basic-color maroon FFF">maroon</div>
+                        <div class="basic-color navy FFF">navy</div>
+                        <div class="basic-color olive">olive</div>
+                        <div class="basic-color purple FFF">purple</div>
+                        <div class="basic-color red">red</div>
+                        <div class="basic-color white">white</div>
+                        <div class="basic-color yellow">yellow</div>
+                    </div>
+                </div>
+                <p class="gradient">Modern browsers now support 140+ different color keywords.</p>
+                <pre><code><span class="comment">/* sets &lt;p&gt; text to tomato */</span>
+p {
+  color: tomato;
+}</code></pre>
+                <p class="example-2">and here is the result</p>
+                <pre><code><span class="comment">/* setting various colors at once */</span>
+h3 { 
+  color: lime;
+  background: indigo;
+  text-decoration: underline wavy cyan;
+  border: solid thick coral;
+  outline: thick solid blue;
+}                  </code></pre>
+
+                <h3><span class="example-3">u can do all sorts of stuff with css colors</span></h3>
+            </section>
+
+            <!-- #HEX Section -->
+            <section id="HEX">
+                <h2>Hex codes</h2>
+                <p>
+                    <em>Hexadecimal color codes</em>
+                    are written in the format
+                    <mark>#RRGGBB</mark>
+                    and represent levels of red, green, and blue.
+                </p>
+
+                <p>Each of the six characters can be any combination of 0-9 and A-F (00 is the lowest; FF is the highest).</p>
+                <p>There are 16,777,216 possible combinations/colors.</p>
+                <pre><code>#r {background-color: #ff0000;}    <span class="comment">/*red*/</span>
+#g {background-color: #00ff00;}    <span class="comment">/*green*/</span>
+#b {background-color: #0000ff;}    <span class="comment">/*blue*/</span></code></pre>
+                <p class="FFF red">red</p>
+                <p class="lime">green</p>
+                <p class="FFF blue">blue</p>
+            </section>
+
+            <!-- #RGB SECTION -->
+            <section id="RGB">
+                <h2>RGB values</h2>
+                <p>
+                    The syntax to set colors using an RGB value is
+                    <mark>rgb(red,green,blue).</mark>
+                </p>
+                <p>Three numbers between 0 and 255, or a percentage from 0% to 100%, specify the intensity of red, green, and blue.</p>
+                <!-- grayscale squares -->
+                <div class="box-wrapper">
+                    <!-- prettier-ignore -->
+                    <div class="black box"><p class="center"><br>Black<br>0,<br>0,0</p></div>
+                    <!-- prettier-ignore -->
+                    <div class="FFF gray box"><p class="center"><br>Gray<br>128,128,<br>128</p></div>
+                    <!-- prettier-ignore -->
+                    <div class="lightGray box"><p class="center"><br>Light&shy;Gray<br>211,<br>211,211</p></div>
+                    <!-- prettier-ignore -->
+                    <div class="white box"><p class="center"><br>White<br>255,255,<br>255</p></div>
+                </div>
+                <p>
+                    Black is the "absense of color", which might be why
+                    <strong>
+                        rgb(0,0,0) =
+                        <span class="underline">black.</span>
+                    </strong>
+                </p>
+                <p>
+                    <span class="graydient">
+                        <strong>
+                            To make gray, set all 3 values to the same number.
+                            <br />
+                            Numbers closer to 255 will be lighter.
+                        </strong>
+                    </span>
+                </p>
+                <p><span class="snow">White, the lightest possible color, is made when all 3 numbers are set at the max, 255.</span></p>
+            </section>
+        </div>
+
+        <!-- RIGHT TABLE -->
+        <table class="right-table">
             <tr>
-                <th colspan="2">NAME</th>
+                <th></th>
+                <th>NAME</th>
                 <th>HEX</th>
-                <th colspan="2">RGB</th>
+                <th>RGB</th>
+                <th></th>
             </tr>
             <tbody>
-                <!-- BLUES -->
-                <!-- BLUE LABEL -->
+                <!-- Blues -->
+                <!-- blue label -->
                 <td rowspan="16" class="blues label">
-                    <p class="vertical">BLUES</p>
+                    <span class="vertical">BLUES</span>
                 </td>
                 <tr class="steelBlue">
-                    <td class="colorName" onclick="copy(this)">SteelBlue</td>
+                    <td class="color-name" onclick="copy(this)">SteelBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#4682B4</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(070,130,180)</td>
-                    <!-- BLUE LABEL -->
-                    <td rowspan="16" class="blues label">
-                        <p class="vertical">BLUES</p>
+                    <td class="RGB-code" onclick="copy(this)">(070,130,180)</td>
+                    <!-- blue label -->
+                    <td rowspan="15" class="blues label">
+                        <span class="vertical">BLUES</span>
                     </td>
                 </tr>
                 <tr class="lightSteelBlue">
-                    <td class="colorName" onclick="copy(this)">LightSteelBlue</td>
+                    <td class="color-name" onclick="copy(this)">LightSteelBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#B0C4DE</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(176,196,222)</td>
+                    <td class="RGB-code" onclick="copy(this)">(176,196,222)</td>
                 </tr>
                 <tr class="powderBlue">
-                    <td class="colorName" onclick="copy(this)">PowderBlue</td>
+                    <td class="color-name" onclick="copy(this)">PowderBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#B0E0E6</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(176,224,230)</td>
+                    <td class="RGB-code" onclick="copy(this)">(176,224,230)</td>
                 </tr>
                 <tr class="lightBlue">
-                    <td class="colorName" onclick="copy(this)">LightBlue</td>
+                    <td class="color-name" onclick="copy(this)">LightBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#ADD8E6</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(173,216,230)</td>
+                    <td class="RGB-code" onclick="copy(this)">(173,216,230)</td>
                 </tr>
                 <tr class="skyBlue">
-                    <td class="colorName" onclick="copy(this)">SkyBlue</td>
+                    <td class="color-name" onclick="copy(this)">SkyBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#87CEEB</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(135,206,235)</td>
+                    <td class="RGB-code" onclick="copy(this)">(135,206,235)</td>
                 </tr>
                 <tr class="lightSkyBlue">
-                    <td class="colorName" onclick="copy(this)">LightSkyBlue</td>
+                    <td class="color-name" onclick="copy(this)">LightSkyBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#87CEFA</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(135,206,250)</td>
+                    <td class="RGB-code" onclick="copy(this)">(135,206,250)</td>
                 </tr>
                 <tr class="deepSkyBlue">
-                    <td class="colorName" onclick="copy(this)">DeepSkyBlue</td>
+                    <td class="color-name" onclick="copy(this)">DeepSkyBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#00BFFF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,191,255)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,191,255)</td>
                 </tr>
                 <tr class="dodgerBlue">
-                    <td class="colorName" onclick="copy(this)">DodgerBlue</td>
+                    <td class="color-name" onclick="copy(this)">DodgerBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#1E90FF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(030,144,255)</td>
+                    <td class="RGB-code" onclick="copy(this)">(030,144,255)</td>
                 </tr>
                 <tr class="cornflowerBlue">
-                    <td class="colorName" onclick="copy(this)">CornflowerBlue</td>
+                    <td class="color-name" onclick="copy(this)">CornflowerBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#6495ED</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(100,149,237)</td>
+                    <td class="RGB-code" onclick="copy(this)">(100,149,237)</td>
                 </tr>
-
                 <tr class="royalBlue">
-                    <td class="colorName" onclick="copy(this)">RoyalBlue</td>
+                    <td class="color-name" onclick="copy(this)">RoyalBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#4169E1</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(065,105,225)</td>
+                    <td class="RGB-code" onclick="copy(this)">(065,105,225)</td>
                 </tr>
                 <tr class="blue">
-                    <td class="colorName" onclick="copy(this)">Blue</td>
+                    <td class="color-name" onclick="copy(this)">Blue</td>
                     <td class="HEX-code" onclick="copy(this)">#0000FF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,000,255)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,000,255)</td>
                 </tr>
                 <tr class="mediumBlue">
-                    <td class="colorName" onclick="copy(this)">MediumBlue</td>
+                    <td class="color-name" onclick="copy(this)">MediumBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#0000CD</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,000,205)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,000,205)</td>
                 </tr>
                 <tr class="darkBlue">
-                    <td class="colorName" onclick="copy(this)">DarkBlue</td>
+                    <td class="color-name" onclick="copy(this)">DarkBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#00008B</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,000,139)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,000,139)</td>
                 </tr>
                 <tr class="navy">
-                    <td class="colorName" onclick="copy(this)">Navy</td>
+                    <td class="color-name" onclick="copy(this)">Navy</td>
                     <td class="HEX-code" onclick="copy(this)">#000080</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,000,128)</td>
+                    <td class="RGB-code" onclick="copy(this)">(000,000,128)</td>
                 </tr>
                 <tr class="midnightBlue">
-                    <td class="colorName" onclick="copy(this)">MidnightBlue</td>
+                    <td class="color-name" onclick="copy(this)">MidnightBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#191970</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(025,025,112)</td>
+                    <td class="RGB-code" onclick="copy(this)">(025,025,112)</td>
                 </tr>
-                <!-- PURPLES -->
-                <!-- PURPLE LABEL -->
+                <!-- Purples -->
+                <!-- purple label -->
                 <td rowspan="20" class="purples label">
-                    <p class="vertical">PURPLES</p>
+                    <span class="vertical">PURPLES</span>
                 </td>
                 <tr class="lavender">
-                    <td class="colorName" onclick="copy(this)">Lavender</td>
+                    <td class="color-name" onclick="copy(this)">Lavender</td>
                     <td class="HEX-code" onclick="copy(this)">#E6E6FA</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(230,230,250)</td>
-                    <!-- PURPLE LABEL -->
-                    <td rowspan="20" class="purples label">
-                        <p class="vertical">PURPLES</p>
+                    <td class="RGB-code" onclick="copy(this)">(230,230,250)</td>
+                    <!-- purple label -->
+                    <td rowspan="19" class="purples label">
+                        <span class="vertical">PURPLES</span>
                     </td>
                 </tr>
                 <tr class="thistle">
-                    <td class="colorName" onclick="copy(this)">Thistle</td>
+                    <td class="color-name" onclick="copy(this)">Thistle</td>
                     <td class="HEX-code" onclick="copy(this)">#D8BFD8</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(216,191,216)</td>
+                    <td class="RGB-code" onclick="copy(this)">(216,191,216)</td>
                 </tr>
                 <tr class="plum">
-                    <td class="colorName" onclick="copy(this)">Plum</td>
+                    <td class="color-name" onclick="copy(this)">Plum</td>
                     <td class="HEX-code" onclick="copy(this)">#DDA0DD</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(221,160,221)</td>
+                    <td class="RGB-code" onclick="copy(this)">(221,160,221)</td>
                 </tr>
                 <tr class="violet">
-                    <td class="colorName" onclick="copy(this)">Violet</td>
+                    <td class="color-name" onclick="copy(this)">Violet</td>
                     <td class="HEX-code" onclick="copy(this)">#EE82EE</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(238,130,238)</td>
+                    <td class="RGB-code" onclick="copy(this)">(238,130,238)</td>
                 </tr>
                 <tr class="orchid">
-                    <td class="colorName" onclick="copy(this)">Orchid</td>
+                    <td class="color-name" onclick="copy(this)">Orchid</td>
                     <td class="HEX-code" onclick="copy(this)">#DA70D6</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(218,112,214)</td>
+                    <td class="RGB-code" onclick="copy(this)">(218,112,214)</td>
                 </tr>
                 <tr class="fuchsia">
-                    <td class="colorName" onclick="copy(this)">Fuchsia</td>
+                    <td class="color-name" onclick="copy(this)">Fuchsia</td>
                     <td class="HEX-code" onclick="copy(this)">#FF00FF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,000,255)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,000,255)</td>
                 </tr>
                 <tr class="magenta">
-                    <td class="colorName" onclick="copy(this)">Magenta</td>
+                    <td class="color-name" onclick="copy(this)">Magenta</td>
                     <td class="HEX-code" onclick="copy(this)">#FF00FF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,000,255)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,000,255)</td>
                 </tr>
                 <tr class="mediumOrchid">
-                    <td class="colorName" onclick="copy(this)">MediumOrchid</td>
+                    <td class="color-name" onclick="copy(this)">MediumOrchid</td>
                     <td class="HEX-code" onclick="copy(this)">#BA55D3</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(186,085,211)</td>
+                    <td class="RGB-code" onclick="copy(this)">(186,085,211)</td>
                 </tr>
                 <tr class="mediumPurple">
-                    <td class="colorName" onclick="copy(this)">MediumPurple</td>
+                    <td class="color-name" onclick="copy(this)">MediumPurple</td>
                     <td class="HEX-code" onclick="copy(this)">#9370DB</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(147,112,219)</td>
+                    <td class="RGB-code" onclick="copy(this)">(147,112,219)</td>
                 </tr>
                 <tr class="blueViolet">
-                    <td class="colorName" onclick="copy(this)">BlueViolet</td>
+                    <td class="color-name" onclick="copy(this)">BlueViolet</td>
                     <td class="HEX-code" onclick="copy(this)">#8A2BE2</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(138,043,226)</td>
+                    <td class="RGB-code" onclick="copy(this)">(138,043,226)</td>
                 </tr>
                 <tr class="darkViolet">
-                    <td class="colorName" onclick="copy(this)">DarkViolet</td>
+                    <td class="color-name" onclick="copy(this)">DarkViolet</td>
                     <td class="HEX-code" onclick="copy(this)">#9400D3</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(148,000,211)</td>
+                    <td class="RGB-code" onclick="copy(this)">(148,000,211)</td>
                 </tr>
                 <tr class="darkOrchid">
-                    <td class="colorName" onclick="copy(this)">DarkOrchid</td>
+                    <td class="color-name" onclick="copy(this)">DarkOrchid</td>
                     <td class="HEX-code" onclick="copy(this)">#9932CC</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(153,050,204)</td>
+                    <td class="RGB-code" onclick="copy(this)">(153,050,204)</td>
                 </tr>
                 <tr class="darkMagenta">
-                    <td class="colorName" onclick="copy(this)">DarkMagenta</td>
+                    <td class="color-name" onclick="copy(this)">DarkMagenta</td>
                     <td class="HEX-code" onclick="copy(this)">#8B008B</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(139,000,139)</td>
+                    <td class="RGB-code" onclick="copy(this)">(139,000,139)</td>
                 </tr>
                 <tr class="purple">
-                    <td class="colorName" onclick="copy(this)">Purple</td>
+                    <td class="color-name" onclick="copy(this)">Purple</td>
                     <td class="HEX-code" onclick="copy(this)">#800080</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(128,000,128)</td>
+                    <td class="RGB-code" onclick="copy(this)">(128,000,128)</td>
                 </tr>
                 <tr class="slateBlue">
-                    <td class="colorName" onclick="copy(this)">SlateBlue</td>
+                    <td class="color-name" onclick="copy(this)">SlateBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#6A5ACD</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(106,090,205)</td>
+                    <td class="RGB-code" onclick="copy(this)">(106,090,205)</td>
                 </tr>
                 <tr class="mediumSlateBlue">
-                    <td class="colorName" onclick="copy(this)">MediumSlateBlue</td>
+                    <td class="color-name" onclick="copy(this)">MediumSlateBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#7B68EE</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(123,104,238)</td>
+                    <td class="RGB-code" onclick="copy(this)">(123,104,238)</td>
                 </tr>
                 <tr class="darkSlateBlue">
-                    <td class="colorName" onclick="copy(this)">DarkSlateBlue</td>
+                    <td class="color-name" onclick="copy(this)">DarkSlateBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#483D8B</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(072,061,139)</td>
+                    <td class="RGB-code" onclick="copy(this)">(072,061,139)</td>
                 </tr>
                 <tr class="indigo">
-                    <td class="colorName" onclick="copy(this)">Indigo</td>
+                    <td class="color-name" onclick="copy(this)">Indigo</td>
                     <td class="HEX-code" onclick="copy(this)">#4B0082</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(075,000,130)</td>
+                    <td class="RGB-code" onclick="copy(this)">(075,000,130)</td>
                 </tr>
                 <tr class="rebeccaPurple">
-                    <td class="colorName" onclick="copy(this)">RebeccaPurple</td>
+                    <td class="color-name" onclick="copy(this)">RebeccaPurple</td>
                     <td class="HEX-code" onclick="copy(this)">#663399</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(102,051,153)</td>
+                    <td class="RGB-code" onclick="copy(this)">(102,051,153)</td>
                 </tr>
-                <!-- BROWNS -->
-                <!-- BROWN LABEL -->
+                <!-- Pinks-->
+                <!-- pink label  -->
+                <td rowspan="7" class="pinks label">
+                    <span class="vertical">PINKS</span>
+                </td>
+                <tr class="pink">
+                    <td class="color-name" onclick="copy(this)">Pink</td>
+                    <td class="HEX-code" onclick="copy(this)">#FFC0CB</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,192,203)</td>
+                    <!-- pink label -->
+                    <td rowspan="6" class="pinks label">
+                        <span class="vertical">PINKS</span>
+                    </td>
+                </tr>
+                <tr class="lightPink">
+                    <td class="color-name" onclick="copy(this)">LightPink</td>
+                    <td class="HEX-code" onclick="copy(this)">#FFB6C1</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,182,193)</td>
+                </tr>
+                <tr class="hotPink">
+                    <td class="color-name" onclick="copy(this)">HotPink</td>
+                    <td class="HEX-code" onclick="copy(this)">#FF69B4</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,105,180)</td>
+                </tr>
+                <tr class="deepPink">
+                    <td class="color-name" onclick="copy(this)">DeepPink</td>
+                    <td class="HEX-code" onclick="copy(this)">#FF1493</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,020,147)</td>
+                </tr>
+                <tr class="mediumVioletRed">
+                    <td class="color-name" onclick="copy(this)">MediumVioletRed</td>
+                    <td class="HEX-code" onclick="copy(this)">#C71585</td>
+                    <td class="RGB-code" onclick="copy(this)">(199,021,133)</td>
+                </tr>
+                <tr class="paleVioletRed">
+                    <td class="color-name" onclick="copy(this)">PaleVioletRed</td>
+                    <td class="HEX-code" onclick="copy(this)">#DB7093</td>
+                    <td class="RGB-code" onclick="copy(this)">(219,112,147)</td>
+                </tr>
+                <!-- Browns -->
+                <!-- brown label -->
                 <td rowspan="18" class="browns label">
-                    <p class="vertical">BROWNS</p>
+                    <span class="vertical">BROWNS</span>
                 </td>
                 <tr class="cornsilk">
-                    <td class="colorName" onclick="copy(this)">Cornsilk</td>
+                    <td class="color-name" onclick="copy(this)">Cornsilk</td>
                     <td class="HEX-code" onclick="copy(this)">#FFF8DC</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,248,220)</td>
-                    <!-- BROWN LABEL -->
-                    <td rowspan="18" class="browns label">
-                        <p class="vertical">BROWNS</p>
+                    <td class="RGB-code" onclick="copy(this)">(255,248,220)</td>
+                    <!-- brown label -->
+                    <td rowspan="17" class="browns label">
+                        <span class="vertical">BROWNS</span>
                     </td>
                 </tr>
                 <tr class="blanchedAlmond">
-                    <td class="colorName" onclick="copy(this)">BlanchedAlmond</td>
+                    <td class="color-name" onclick="copy(this)">BlanchedAlmond</td>
                     <td class="HEX-code" onclick="copy(this)">#FFEBCD</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,235,205)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,235,205)</td>
                 </tr>
                 <tr class="bisque">
-                    <td class="colorName" onclick="copy(this)">Bisque</td>
+                    <td class="color-name" onclick="copy(this)">Bisque</td>
                     <td class="HEX-code" onclick="copy(this)">#FFE4C4</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,228,196)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,228,196)</td>
                 </tr>
                 <tr class="navajoWhite">
-                    <td class="colorName" onclick="copy(this)">NavajoWhite</td>
+                    <td class="color-name" onclick="copy(this)">NavajoWhite</td>
                     <td class="HEX-code" onclick="copy(this)">#FFDEAD</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,222,173)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,222,173)</td>
                 </tr>
                 <tr class="wheat">
-                    <td class="colorName" onclick="copy(this)">Wheat</td>
+                    <td class="color-name" onclick="copy(this)">Wheat</td>
                     <td class="HEX-code" onclick="copy(this)">#F5DEB3</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(245,222,179)</td>
+                    <td class="RGB-code" onclick="copy(this)">(245,222,179)</td>
                 </tr>
                 <tr class="burlyWood">
-                    <td class="colorName" onclick="copy(this)">BurlyWood</td>
+                    <td class="color-name" onclick="copy(this)">BurlyWood</td>
                     <td class="HEX-code" onclick="copy(this)">#DEB887</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(222,184,135)</td>
+                    <td class="RGB-code" onclick="copy(this)">(222,184,135)</td>
                 </tr>
                 <tr class="tan">
-                    <td class="colorName" onclick="copy(this)">Tan</td>
+                    <td class="color-name" onclick="copy(this)">Tan</td>
                     <td class="HEX-code" onclick="copy(this)">#D2B48C</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(210,180,140)</td>
+                    <td class="RGB-code" onclick="copy(this)">(210,180,140)</td>
                 </tr>
                 <tr class="rosyBrown">
-                    <td class="colorName" onclick="copy(this)">RosyBrown</td>
+                    <td class="color-name" onclick="copy(this)">RosyBrown</td>
                     <td class="HEX-code" onclick="copy(this)">#BC8F8F</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(188,143,143</td>
+                    <td class="RGB-code" onclick="copy(this)">(188,143,143</td>
                 </tr>
                 <tr class="sandyBrown">
-                    <td class="colorName" onclick="copy(this)">SandyBrown</td>
+                    <td class="color-name" onclick="copy(this)">SandyBrown</td>
                     <td class="HEX-code" onclick="copy(this)">#F4A460</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(244,164,096)</td>
+                    <td class="RGB-code" onclick="copy(this)">(244,164,096)</td>
                 </tr>
+
                 <tr class="goldenrod">
-                    <td class="colorName" onclick="copy(this)">Goldenrod</td>
+                    <td class="color-name" onclick="copy(this)">Goldenrod</td>
                     <td class="HEX-code" onclick="copy(this)">#DAA520</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(218,165,032)</td>
+                    <td class="RGB-code" onclick="copy(this)">(218,165,032)</td>
                 </tr>
                 <tr class="darkGoldenrod">
-                    <td class="colorName" onclick="copy(this)">DarkGoldenrod</td>
+                    <td class="color-name" onclick="copy(this)">DarkGoldenrod</td>
                     <td class="HEX-code" onclick="copy(this)">#B8860B</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(184,134,011)</td>
+                    <td class="RGB-code" onclick="copy(this)">(184,134,011)</td>
                 </tr>
+
                 <tr class="peru">
-                    <td class="colorName" onclick="copy(this)">Peru</td>
+                    <td class="color-name" onclick="copy(this)">Peru</td>
                     <td class="HEX-code" onclick="copy(this)">#CD853F</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(205,133,063)</td>
+                    <td class="RGB-code" onclick="copy(this)">(205,133,063)</td>
                 </tr>
                 <tr class="chocolate">
-                    <td class="colorName" onclick="copy(this)">Chocolate</td>
+                    <td class="color-name" onclick="copy(this)">Chocolate</td>
                     <td class="HEX-code" onclick="copy(this)">#D2691E</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(210,105,030)</td>
+                    <td class="RGB-code" onclick="copy(this)">(210,105,030)</td>
                 </tr>
                 <tr class="saddleBrown">
-                    <td class="colorName" onclick="copy(this)">SaddleBrown</td>
+                    <td class="color-name" onclick="copy(this)">SaddleBrown</td>
                     <td class="HEX-code" onclick="copy(this)">#8B4513</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(139,069,019)</td>
+                    <td class="RGB-code" onclick="copy(this)">(139,069,019)</td>
                 </tr>
                 <tr class="sienna">
-                    <td class="colorName" onclick="copy(this)">Sienna</td>
+                    <td class="color-name" onclick="copy(this)">Sienna</td>
                     <td class="HEX-code" onclick="copy(this)">#A0522D</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(160,082,045)</td>
+                    <td class="RGB-code" onclick="copy(this)">(160,082,045)</td>
                 </tr>
                 <tr class="brown">
-                    <td class="colorName" onclick="copy(this)">Brown</td>
+                    <td class="color-name" onclick="copy(this)">Brown</td>
                     <td class="HEX-code" onclick="copy(this)">#A52A2A</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(165,042,042)</td>
+                    <td class="RGB-code" onclick="copy(this)">(165,042,042)</td>
                 </tr>
                 <tr class="maroon">
-                    <td class="colorName" onclick="copy(this)">Maroon</td>
+                    <td class="color-name" onclick="copy(this)">Maroon</td>
                     <td class="HEX-code" onclick="copy(this)">#800000</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(128,000,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(128,000,000)</td>
                 </tr>
-                <!-- WHITES -->
-                <!-- WHITE LABEL -->
+                <!-- Whites -->
+                <!-- white label -->
                 <td rowspan="18" class="whites label">
-                    <p class="vertical">WHITES</p>
+                    <span class="vertical">WHITES</span>
                 </td>
                 <tr class="white">
-                    <td class="colorName" onclick="copy(this)">White</td>
+                    <td class="color-name" onclick="copy(this)">White</td>
                     <td class="HEX-code" onclick="copy(this)">#FFFFFF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,255,255)</td>
-                    <!-- WHITE LABEL -->
-                    <td rowspan="18" class="whites label">
-                        <p class="vertical">WHITES</p>
+                    <td class="RGB-code" onclick="copy(this)">(255,255,255)</td>
+                    <!-- white label -->
+                    <td rowspan="17" class="whites label">
+                        <span class="vertical">WHITES</span>
                     </td>
                 </tr>
                 <tr class="snow">
-                    <td class="colorName" onclick="copy(this)">Snow</td>
+                    <td class="color-name" onclick="copy(this)">Snow</td>
                     <td class="HEX-code" onclick="copy(this)">#FFFAFA</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,250,250</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,250,250</td>
                 </tr>
                 <tr class="honeyDew">
-                    <td class="colorName" onclick="copy(this)">HoneyDew</td>
+                    <td class="color-name" onclick="copy(this)">HoneyDew</td>
                     <td class="HEX-code" onclick="copy(this)">#F0FFF0</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(240,255,240)</td>
+                    <td class="RGB-code" onclick="copy(this)">(240,255,240)</td>
                 </tr>
                 <tr class="mintCream">
-                    <td class="colorName" onclick="copy(this)">MintCream</td>
+                    <td class="color-name" onclick="copy(this)">MintCream</td>
                     <td class="HEX-code" onclick="copy(this)">#F5FFFA</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(245,255,250)</td>
+                    <td class="RGB-code" onclick="copy(this)">(245,255,250)</td>
                 </tr>
                 <tr class="azure">
-                    <td class="colorName" onclick="copy(this)">Azure</td>
+                    <td class="color-name" onclick="copy(this)">Azure</td>
                     <td class="HEX-code" onclick="copy(this)">#F0FFFF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(240,255,255)</td>
+                    <td class="RGB-code" onclick="copy(this)">(240,255,255)</td>
                 </tr>
                 <tr class="aliceBlue">
-                    <td class="colorName" onclick="copy(this)">AliceBlue</td>
+                    <td class="color-name" onclick="copy(this)">AliceBlue</td>
                     <td class="HEX-code" onclick="copy(this)">#F0F8FF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(240,248,255)</td>
+                    <td class="RGB-code" onclick="copy(this)">(240,248,255)</td>
                 </tr>
                 <tr class="ghostWhite">
-                    <td class="colorName" onclick="copy(this)">GhostWhite</td>
+                    <td class="color-name" onclick="copy(this)">GhostWhite</td>
                     <td class="HEX-code" onclick="copy(this)">#F8F8FF</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(248,248,255)</td>
+                    <td class="RGB-code" onclick="copy(this)">(248,248,255)</td>
                 </tr>
                 <tr class="whiteSmoke">
-                    <td class="colorName" onclick="copy(this)">WhiteSmoke</td>
+                    <td class="color-name" onclick="copy(this)">WhiteSmoke</td>
                     <td class="HEX-code" onclick="copy(this)">#F5F5F5</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(245,245,245)</td>
+                    <td class="RGB-code" onclick="copy(this)">(245,245,245)</td>
                 </tr>
                 <tr class="seaShell">
-                    <td class="colorName" onclick="copy(this)">SeaShell</td>
+                    <td class="color-name" onclick="copy(this)">SeaShell</td>
                     <td class="HEX-code" onclick="copy(this)">#FFF5EE</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,245,238)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,245,238)</td>
                 </tr>
                 <tr class="beige">
-                    <td class="colorName" onclick="copy(this)">Beige</td>
+                    <td class="color-name" onclick="copy(this)">Beige</td>
                     <td class="HEX-code" onclick="copy(this)">#F5F5DC</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(245,245,220)</td>
+                    <td class="RGB-code" onclick="copy(this)">(245,245,220)</td>
                 </tr>
                 <tr class="oldLace">
-                    <td class="colorName" onclick="copy(this)">OldLace</td>
+                    <td class="color-name" onclick="copy(this)">OldLace</td>
                     <td class="HEX-code" onclick="copy(this)">#FDF5E6</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(253,245,230)</td>
+                    <td class="RGB-code" onclick="copy(this)">(253,245,230)</td>
                 </tr>
                 <tr class="floralWhite">
-                    <td class="colorName" onclick="copy(this)">FloralWhite</td>
+                    <td class="color-name" onclick="copy(this)">FloralWhite</td>
                     <td class="HEX-code" onclick="copy(this)">#FFFAF0</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,250,240)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,250,240)</td>
                 </tr>
                 <tr class="ivory">
-                    <td class="colorName" onclick="copy(this)">Ivory</td>
+                    <td class="color-name" onclick="copy(this)">Ivory</td>
                     <td class="HEX-code" onclick="copy(this)">#FFFFF0</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,255,240)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,255,240)</td>
                 </tr>
                 <tr class="antiqueWhite">
-                    <td class="colorName" onclick="copy(this)">AntiqueWhite</td>
+                    <td class="color-name" onclick="copy(this)">AntiqueWhite</td>
                     <td class="HEX-code" onclick="copy(this)">#FAEBD7</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(250,235,215)</td>
+                    <td class="RGB-code" onclick="copy(this)">(250,235,215)</td>
                 </tr>
                 <tr class="linen">
-                    <td class="colorName" onclick="copy(this)">Linen</td>
+                    <td class="color-name" onclick="copy(this)">Linen</td>
                     <td class="HEX-code" onclick="copy(this)">#FAF0E6</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(250,240,230)</td>
+                    <td class="RGB-code" onclick="copy(this)">(250,240,230)</td>
                 </tr>
                 <tr class="lavenderBlush">
-                    <td class="colorName" onclick="copy(this)">LavenderBlush</td>
+                    <td class="color-name" onclick="copy(this)">LavenderBlush</td>
                     <td class="HEX-code" onclick="copy(this)">#FFF0F5</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,240,245)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,240,245)</td>
                 </tr>
                 <tr class="mistyRose">
-                    <td class="colorName" onclick="copy(this)">MistyRose</td>
+                    <td class="color-name" onclick="copy(this)">MistyRose</td>
                     <td class="HEX-code" onclick="copy(this)">#FFE4E1</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(255,228,225)</td>
-                </tr>
-                <!-- GRAYS -->
-                <!-- GRAY LABEL -->
-                <td rowspan="11" class="grays label">
-                    <p class="vertical">GRAYS</p>
-                </td>
-                <tr class="gainsboro">
-                    <td class="colorName" onclick="copy(this)">Gainsboro</td>
-                    <td class="HEX-code" onclick="copy(this)">#DCDCDC</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(220,220,220)</td>
-                    <!-- GRAY LABEL -->
-                    <td rowspan="11" class="grays label">
-                        <p class="vertical">GRAYS</p>
-                    </td>
-                </tr>
-                <tr class="lightGray">
-                    <td class="colorName" onclick="copy(this)">LightGray</td>
-                    <td class="HEX-code" onclick="copy(this)">#D3D3D3</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(211,211,211)</td>
-                </tr>
-                <tr class="silver">
-                    <td class="colorName" onclick="copy(this)">Silver</td>
-                    <td class="HEX-code" onclick="copy(this)">#C0C0C0</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(192,192,192)</td>
-                </tr>
-                <tr class="darkGray">
-                    <td class="colorName" onclick="copy(this)">DarkGray</td>
-                    <td class="HEX-code" onclick="copy(this)">#A9A9A9</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(169,169,169)</td>
-                </tr>
-                <tr class="gray">
-                    <td class="colorName" onclick="copy(this)">Gray</td>
-                    <td class="HEX-code" onclick="copy(this)">#808080</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(128,128,128)</td>
-                </tr>
-                <tr class="dimGray">
-                    <td class="colorName" onclick="copy(this)">DimGray</td>
-                    <td class="HEX-code" onclick="copy(this)">#696969</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(105,105,105)</td>
-                </tr>
-                <tr class="lightSlateGray">
-                    <td class="colorName" onclick="copy(this)">LightSlateGray</td>
-                    <td class="HEX-code" onclick="copy(this)">#778899</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(119,136,153)</td>
-                </tr>
-                <tr class="slateGray">
-                    <td class="colorName" onclick="copy(this)">SlateGray</td>
-                    <td class="HEX-code" onclick="copy(this)">#708090</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(112,128,144)</td>
-                </tr>
-                <tr class="darkSlateGray">
-                    <td class="colorName" onclick="copy(this)">DarkSlateGray</td>
-                    <td class="HEX-code" onclick="copy(this)">#2F4F4F</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(47,079,079)</td>
-                </tr>
-                <tr class="black">
-                    <td class="colorName" onclick="copy(this)">Black</td>
-                    <td class="HEX-code" onclick="copy(this)">#000000</td>
-                    <td class="RGB-code" onclick="copy(this)">rgb(000,000,000)</td>
+                    <td class="RGB-code" onclick="copy(this)">(255,228,225)</td>
                 </tr>
             </tbody>
         </table>
