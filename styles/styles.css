@@ -57,7 +57,7 @@ pre {
     margin-bottom: 1rem;
     padding-left: 2.5rem;
     white-space: pre-wrap;
-    background-image: url(/images/paper.png);
+    background-image: url(../images/paper.png);
     background-color: rgba(245, 245, 146, 0.733);
     border-left: 9px solid rgba(243, 243, 60, 0.687);
     border-right: 9px solid rgba(243, 243, 60, 0.687);
